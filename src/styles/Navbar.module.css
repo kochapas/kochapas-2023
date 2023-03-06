@@ -1,0 +1,14 @@
+.navbar {
+  width: 100%;
+  background-color: lavender;
+  height: 40px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+.navbar__info {
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+}
