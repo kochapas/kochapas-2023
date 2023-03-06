@@ -1,8 +1,12 @@
 import Image from "next/image";
-import styles from '@/styles/Navbar.module.css'
+import styles from "@/styles/Navbar.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
+
 
 export const Navbar = ({children}) => {
-
+  console.log("Navbar ==>", {  });
   return (
     <>
       <div className={styles.navbar}>
@@ -17,10 +21,34 @@ export const Navbar = ({children}) => {
             />
           </div>
           <div className={styles.navbar__info}>
-            <p className="m-auto me-2">X</p>
-            <p className="m-auto me-2">X</p>
-            <p className="m-auto me-2">X</p>
-            <p className="m-auto me-2">X</p>
+            <a href="mailto:kochapas@outlook.com">
+              <FontAwesomeIcon
+                icon={faSquareEnvelope}
+                size="2x"
+                className="me-2"
+              />
+            </a>
+            <a href="tel:+818034446253">
+              <FontAwesomeIcon
+                icon={faSquarePhone}
+                size="2x"
+                className="me-2"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/kochapas" target="_blank">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+                className="me-2"
+              />
+            </a>
+            <a href="https://www.github.com/kochapas" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="2x"
+                className="me-2"
+              />
+            </a>
           </div>
         </div>
       </div>
