@@ -1,7 +1,8 @@
 import Image from "next/image";
 import {
   Header,
-  Contact
+  Contact,
+  InformationCards
 } from "@/components"
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Header />
       <Contact />
+      <InformationCards />
     </>
   )
 }
