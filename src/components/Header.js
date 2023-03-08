@@ -21,7 +21,7 @@ export const Header = () => {
                 <FontAwesomeIcon
                   icon={faLocationDot}
                   size="1x"
-                  className="me-1"
+                  className="me-2 mt-1"
                 />
                 <p>Tokyo, Japan</p>
               </div>
