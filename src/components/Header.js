@@ -9,13 +9,13 @@ export const Header = () => {
       <div className={styles.header__background}>
         <div className="container w-75 mb-3">
           <div className="d-flex justify-content-between">
-            <div className="w-25 d-flex flex-column align-items-center">
+            <div className="w-auto d-flex flex-column align-items-center">
               <Image
                 alt="kochapas's picture"
                 src="/assets/parrot.jpg"
                 width={160}
                 height={160}
-                className="rounded-circle m-2 mb-1"
+                className="rounded-circle m-2 ms-0 mb-1"
               />
               <div className="d-flex">
                 <FontAwesomeIcon

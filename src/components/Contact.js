@@ -14,7 +14,7 @@ export const Contact = () => {
                 <FontAwesomeIcon
                   icon={faSquareEnvelope}
                   size="2x"
-                  className="me-2"
+                  className="me-3"
                 />
                 <p className="mt-auto mb-auto">
                   {"kochapas@outlook.com"}
@@ -24,7 +24,7 @@ export const Contact = () => {
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
-                  className="me-2"
+                  className="me-3"
                 />
                 <p className="mt-auto mb-auto">
                   {"linkedin.com/in/kochapas"}
@@ -36,7 +36,7 @@ export const Contact = () => {
                 <FontAwesomeIcon
                   icon={faSquarePhone}
                   size="2x"
-                  className="me-2"
+                  className="me-3"
                 />
                 <p className="mt-auto mb-auto">
                   {"+81 80 3444 6253"}
@@ -46,7 +46,7 @@ export const Contact = () => {
                 <FontAwesomeIcon
                   icon={faGithubSquare}
                   size="2x"
-                  className="me-2"
+                  className="me-3"
                 />
                 <p className="mt-auto mb-auto">
                   {"github.com/kochapas"}
