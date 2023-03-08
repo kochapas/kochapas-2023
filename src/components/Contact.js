@@ -16,17 +16,17 @@ export const Contact = () => {
                   size="2x"
                   className="me-2"
                 />
-                <p>
+                <p className="mt-auto mb-auto">
                   {"kochapas@outlook.com"}
                 </p>
               </div>
-              <div className="d-flex">
+              <div className="d-flex mt-3">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
                   className="me-2"
                 />
-                <p>
+                <p className="mt-auto mb-auto">
                   {"linkedin.com/in/kochapas"}
                 </p>
               </div>
@@ -38,17 +38,17 @@ export const Contact = () => {
                   size="2x"
                   className="me-2"
                 />
-                <p>
+                <p className="mt-auto mb-auto">
                   {"+81 80 3444 6253"}
                 </p>
               </div>
-              <div className="d-flex">
+              <div className="d-flex mt-3">
                 <FontAwesomeIcon
                   icon={faGithubSquare}
                   size="2x"
                   className="me-2"
                 />
-                <p>
+                <p className="mt-auto mb-auto">
                   {"github.com/kochapas"}
                 </p>
               </div>

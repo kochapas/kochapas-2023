@@ -3,9 +3,5 @@ body {
 }
 
 a {
-  color: darkslateblue;
-}
-
-a:hover {
   color: slateblue;
 }
