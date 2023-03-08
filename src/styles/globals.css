@@ -6,6 +6,19 @@ a {
   color: slateblue;
 }
 
+a:hover {
+  color: slateblue;
+}
+
 .text--purple {
   color: darkslateblue;
+}
+
+.link--plain {
+  text-decoration: none;
+  color: #212529;
+}
+
+.link--plain:hover {
+  color: #212529;
 }

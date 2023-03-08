@@ -16,9 +16,11 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <p className="mt-auto mb-auto">
-                  {"kochapas@outlook.com"}
-                </p>
+                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto link--plain">
+                  <p className="mt-auto mb-auto">
+                    {"kochapas@outlook.com"}
+                  </p>
+                </a>
               </div>
               <div className="d-flex mt-3">
                 <FontAwesomeIcon
@@ -26,9 +28,11 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <p className="mt-auto mb-auto">
-                  {"linkedin.com/in/kochapas"}
-                </p>
+                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto link--plain">
+                  <p className="mt-auto mb-auto">
+                    {"linkedin.com/in/kochapas"}
+                  </p>
+                </a>
               </div>
             </div>
             <div className="w-50">
@@ -38,9 +42,11 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <p className="mt-auto mb-auto">
-                  {"+81 80 3444 6253"}
-                </p>
+                <a href="tel:+818034446253" className="mt-auto mb-auto link--plain">
+                  <p className="mt-auto mb-auto">
+                    {"+81 80 3444 6253"}
+                  </p>
+                </a>
               </div>
               <div className="d-flex mt-3">
                 <FontAwesomeIcon
@@ -48,9 +54,11 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <p className="mt-auto mb-auto">
-                  {"github.com/kochapas"}
-                </p>
+                <a href="https://www.github.com/kochapas" target="_blank" className="mt-auto mb-auto link--plain">
+                  <p className="mt-auto mb-auto">
+                    {"github.com/kochapas"}
+                  </p>
+                </a>
               </div>
             </div>
           </div>

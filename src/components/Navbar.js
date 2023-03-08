@@ -4,12 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
 
-
 export const Navbar = ({children}) => {
   console.log("Navbar ==>", {  });
   return (
     <>
-      <div className={styles.navbar}>
+      <div id={styles.navbar}>
         <div className="container d-flex justify-content-between">
           <div className={styles.navbar__avatar}>
             <Image
