@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <>
       <div className={styles.header__background}>
-        <div className={`${windowSize.containerClass} mb-3`}>
+        <div className={`${windowSize.containerClass} mb-3 pt-4`}>
           <div className="row">
             <div className="col-12 col-lg-3 d-flex flex-column align-items-center">
               <Image

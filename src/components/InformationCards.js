@@ -7,6 +7,7 @@ import {
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const InformationCards = () => {
+  // TODO: create useTranslation hook.
   // TODO: Read these values from API instead.
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
   const windowSize = useWindowSize();

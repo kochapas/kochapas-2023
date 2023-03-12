@@ -9,7 +9,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className={`${styles.contact__background} bg-lilac`}>
+      <div id="card-contact" className={`${styles.contact__background} bg-lilac`}>
         <div className={`${windowSize.containerClass} mt-3 mb-3 h-100`}>
           <div className="row h-100 d-flex justify-content-between align-items-center">
             <div className="col-12 col-lg-6">

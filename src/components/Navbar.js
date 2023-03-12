@@ -1,16 +1,35 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
+import { useScrollLocation } from "@/hooks/useScrollLocation";
 
 export const Navbar = ({children}) => {
-  console.log("Navbar ==>", {  });
+  const scrollLocation = useScrollLocation();
+  const [navbarClass, setNavbarClass] = useState(styles["navbar--hidden"]);
+
+  useEffect(() => {
+    // Check if user scolled pass the contact information, if so, show navbar.
+    const targetRect = document?.getElementById("card-contact")?.getBoundingClientRect();
+    if (targetRect && (targetRect.y + targetRect.height < 0)) {
+      setNavbarClass(styles["navbar--show"]);
+    } else {
+      setNavbarClass(styles["navbar--hidden"]);
+    }
+  }, [scrollLocation])
+
   return (
     <>
-      <div id={styles.navbar}>
+      <div id={styles.navbar} className={navbarClass}>
         <div className="container d-flex justify-content-between">
-          <div className={styles.navbar__avatar}>
+          <div
+            className={styles.navbar__avatar}
+            onClick={() => {
+              window.location = "#"
+            }}
+          >
             <Image
               src="/assets/avatar.jpg"
               alt="Navbar avatar"

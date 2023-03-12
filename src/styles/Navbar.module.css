@@ -1,7 +1,7 @@
 #navbar {
   width: 100%;
   background-color: lavender;
-  height: 40px;
+  height: 48px;
   padding: 0;
   position: fixed;
   top: 0;
@@ -14,4 +14,24 @@
   display: flex;
   justify-content: flex-end;
   vertical-align: middle;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.navbar--hidden {
+  opacity: 0;
+  animation: fadeOut 0.3s;
+}
+
+.navbar--show {
+  opacity: 1;
+  animation: fadeIn 0.3s;
 }
