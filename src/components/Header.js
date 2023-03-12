@@ -8,8 +8,8 @@ export const Header = () => {
     <>
       <div className={styles.header__background}>
         <div className="container w-75 mb-3">
-          <div className="d-flex justify-content-between">
-            <div className="w-auto d-flex flex-column align-items-center">
+          <div className="row">
+            <div className="col-12 col-lg-3 d-flex flex-column align-items-center">
               <Image
                 alt="kochapas's picture"
                 src="/assets/avatar.jpg"
@@ -26,7 +26,7 @@ export const Header = () => {
                 <p>Tokyo, Japan</p>
               </div>
             </div>
-            <div className="w-75 mt-2">
+            <div className="col-12 col-lg-9 mt-2">
               <div>
                 <h1>
                   Kochapas Santibut (Allen)

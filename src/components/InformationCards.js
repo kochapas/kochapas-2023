@@ -79,15 +79,15 @@ export const InformationCards = () => {
             <div className="row">
               <div className="col-12 col-lg-4">
                 <p className="mb-0">Thai</p>
-                <p className="text-muted fst-italic">{"Native / Billingual"}</p>
+                <p className="mb-2 text-muted fst-italic">{"Native / Billingual"}</p>
               </div>
               <div className="col-12 col-lg-4">
                 <p className="mb-0">English</p>
-                <p className="text-muted fst-italic">{"Native / Billingual"}</p>
+                <p className="mb-2 text-muted fst-italic">{"Native / Billingual"}</p>
               </div>
               <div className="col-12 col-lg-4">
                 <p className="mb-0">Japanese</p>
-                <p className="text-muted fst-italic">{"Conversational"}</p>
+                <p className="mb-0 text-muted fst-italic">{"Conversational"}</p>
               </div>
             </div>
           </CardContainer>

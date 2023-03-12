@@ -8,8 +8,8 @@ export const Contact = () => {
     <>
       <div className={`${styles.contact__background} bg-lilac`}>
         <div className="container w-75 h-100">
-          <div className="h-100 d-flex justify-content-between align-items-center">
-            <div className="w-50">
+          <div className="row h-100 d-flex justify-content-between align-items-center">
+            <div className="col-12 col-lg-6">
               <div className="d-flex">
                 <FontAwesomeIcon
                   icon={faSquareEnvelope}
@@ -35,8 +35,8 @@ export const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="w-50">
-              <div className="d-flex">
+            <div className="col-12 col-lg-6">
+              <div className="d-flex mt-3 mt-lg-0">
                 <FontAwesomeIcon
                   icon={faSquarePhone}
                   size="2x"
