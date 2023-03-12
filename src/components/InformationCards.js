@@ -3,20 +3,32 @@ import {
   BadgeContainer,
   CardContainer,
   HistoryCard,
+  ExpandableSpace
 } from "@/components"
-import { useWindowSize } from "@/hooks/useWindowSize";
+import { useWindowSize, useScrollLocation } from "@/hooks";
 
 export const InformationCards = () => {
   // TODO: create useTranslation hook.
   // TODO: Read these values from API instead.
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
   const windowSize = useWindowSize();
+  const scrollLocation = useScrollLocation();
+  const [spaceExpanded, setSpaceExpanded] = useState(false);
+
+  useEffect(() => {
+    if (scrollLocation?.y > 20) {
+      setSpaceExpanded(true);
+    } else {
+      setSpaceExpanded(false);
+    }
+  }, [scrollLocation]);
 
   return (
     <div className={`${windowSize.containerClass} mt-3`}>
       <div className="row">
         {/* Left column */}
         <div className="col-12 col-lg-6">
+          <ExpandableSpace expanded={spaceExpanded} height={"20px"}/>
           <CardContainer title="Work Experience">
             <HistoryCard
               title="Full-Stack Web Developer"
@@ -50,6 +62,7 @@ export const InformationCards = () => {
               location="Bangkok, Thailand"
             />
           </CardContainer>
+          <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title="Freelance / Volunteer">
             <HistoryCard
               title="Frontend Developer"
@@ -76,9 +89,11 @@ export const InformationCards = () => {
         </div>
         {/* Right column */}
         <div className="col-12 col-lg-6">
+          <ExpandableSpace expanded={spaceExpanded} height={"80px"}/>
           <CardContainer title="Skills">
             <BadgeContainer contents={skills} />
           </CardContainer>
+          <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title="Languages">
             <div className="row">
               <div className="col-12 col-lg-4">
@@ -95,6 +110,7 @@ export const InformationCards = () => {
               </div>
             </div>
           </CardContainer>
+          <ExpandableSpace expanded={spaceExpanded} height={"60px"}/>
           <CardContainer title="Education">
             <HistoryCard
               title="Web Development Bootcamp"
@@ -110,6 +126,7 @@ export const InformationCards = () => {
               location="Bangkok, Thailand"
             />
           </CardContainer>
+          <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title="Interests">
             <div>
               <p>
