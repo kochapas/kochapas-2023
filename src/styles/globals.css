@@ -32,14 +32,14 @@ a:hover {
 }
 
 .card-container {
-  border: solid 1px rgba(33, 37, 41, 0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0);
   border-radius: 8px;
-  transition: border-color 0.3s linear;
+  transition: box-shadow 0.3s linear;
 }
 
 .card-container:hover {
-  border-color: rgba(33, 37, 41, 0.3);
-  transition: border-color 0.3s linear;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s linear;
 }
 
 .space--expand {

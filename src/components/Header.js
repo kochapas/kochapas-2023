@@ -6,6 +6,7 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Header = () => {
   const windowSize = useWindowSize();
+  // TODO: Add PDF download button.
 
   return (
     <>
@@ -16,8 +17,8 @@ export const Header = () => {
               <Image
                 alt="kochapas's picture"
                 src="/assets/avatar.jpg"
-                width={160}
-                height={160}
+                width={200}
+                height={200}
                 className="rounded-circle m-2 ms-0 mb-1"
               />
               <div className="d-flex">
@@ -40,7 +41,7 @@ export const Header = () => {
                   Full-Stack Developer
                 </h2>
               </div>
-              <div>
+              <div className="mt-4">
                 <p className="mb-2">
                   Experienced coder proficient in multiple programming languages since 2014.
                 </p>
