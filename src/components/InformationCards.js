@@ -104,7 +104,7 @@ export const InformationCards = () => {
             />
             <HistoryCard
               title="Information Technology"
-              subtitle="Bachelor's degree"
+              subtitle="Bachelor's"
               placeName="Thai-Nichi Institute of Technology"
               dateRange="07/2011 - 06/2015"
               location="Bangkok, Thailand"

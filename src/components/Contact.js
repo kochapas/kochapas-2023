@@ -57,7 +57,11 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="https://www.github.com/kochapas" target="_blank" className="mt-auto mb-auto link--plain fs-5">
+                <a href="https://www.github.com/kochapas"
+                  className="mt-auto mb-auto link--plain fs-5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p className="mt-auto mb-auto">
                     {"github.com/kochapas"}
                   </p>

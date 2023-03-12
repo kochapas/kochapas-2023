@@ -53,14 +53,22 @@ export const Navbar = ({children}) => {
                 className="me-2"
               />
             </a>
-            <a href="https://www.linkedin.com/in/kochapas" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/kochapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2x"
                 className="me-2"
               />
             </a>
-            <a href="https://www.github.com/kochapas" target="_blank">
+            <a
+              href="https://www.github.com/kochapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faGithubSquare}
                 size="2x"
