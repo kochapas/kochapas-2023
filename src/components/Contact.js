@@ -6,7 +6,7 @@ import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-ico
 export const Contact = () => {
   return (
     <>
-      <div className={styles.contact__background}>
+      <div className={`${styles.contact__background} bg-lilac`}>
         <div className="container w-75 h-100">
           <div className="h-100 d-flex justify-content-between align-items-center">
             <div className="w-50">

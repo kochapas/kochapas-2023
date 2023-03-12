@@ -1,10 +1,17 @@
-import { CardContainer } from "./CardContainer"
-import { HistoryCard } from "./HistoryCard"
+import {
+  BadgeContainer,
+  CardContainer,
+  HistoryCard,
+} from "@/components"
 
 export const InformationCards = () => {
+  // TODO: Read these values from API instead.
+  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
+
   return (
     <div className="container w-75 mt-3">
       <div className="row">
+        {/* Left column */}
         <div className="col-12 col-lg-6">
           <CardContainer title="Work Experience">
             <HistoryCard
@@ -63,7 +70,11 @@ export const InformationCards = () => {
             />
           </CardContainer>
         </div>
+        {/* Right column */}
         <div className="col-12 col-lg-6">
+          <CardContainer title="Skills">
+            <BadgeContainer contents={skills} />
+          </CardContainer>
           <CardContainer title="Education">
             <HistoryCard
               title="Web Development Bootcamp"
