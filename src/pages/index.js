@@ -3,7 +3,8 @@ import {
   Header,
   Contact,
   InformationCards,
-  Footer
+  Projects,
+  Footer,
 } from "@/components"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <Contact />
       <InformationCards />
+      <Projects />
       <Footer />
     </>
   )

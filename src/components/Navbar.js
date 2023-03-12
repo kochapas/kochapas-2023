@@ -8,17 +8,19 @@ import { useScrollLocation } from "@/hooks/useScrollLocation";
 
 export const Navbar = ({children}) => {
   const scrollLocation = useScrollLocation();
-  const [navbarClass, setNavbarClass] = useState(styles["navbar--hidden"]);
+  // Set navbar class to be "d-none" by default to prevent the animation from being played when the page is loaded.
+  const [navbarClass, setNavbarClass] = useState("d-none");
 
   useEffect(() => {
+    console.log("hoook");
     // Check if user scolled pass the contact information, if so, show navbar.
     const targetRect = document?.getElementById("card-contact")?.getBoundingClientRect();
     if (targetRect && (targetRect.y + targetRect.height < 0)) {
       setNavbarClass(styles["navbar--show"]);
     } else {
-      setNavbarClass(styles["navbar--hidden"]);
+      if (navbarClass !== "d-none") setNavbarClass(styles["navbar--hidden"]);
     }
-  }, [scrollLocation])
+  }, [scrollLocation, navbarClass])
 
   return (
     <>
