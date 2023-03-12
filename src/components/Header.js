@@ -2,12 +2,15 @@ import styles from "@/styles/Header.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Header = () => {
+  const windowSize = useWindowSize();
+
   return (
     <>
       <div className={styles.header__background}>
-        <div className="container w-75 mb-3">
+        <div className={`${windowSize.containerClass} mb-3`}>
           <div className="row">
             <div className="col-12 col-lg-3 d-flex flex-column align-items-center">
               <Image
@@ -38,7 +41,7 @@ export const Header = () => {
                 </h2>
               </div>
               <div>
-                <p className="mb-1">
+                <p className="mb-2">
                   Experienced coder proficient in multiple programming languages since 2014.
                 </p>
                 <p>Originally from Bangkok, Thailand. Seeking opportunities to utilize my skills and expertise to enhance quality of life and promote workplace efficiency.</p>

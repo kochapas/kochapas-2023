@@ -2,12 +2,15 @@ import styles from "@/styles/Contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Contact = () => {
+  const windowSize = useWindowSize();
+
   return (
     <>
       <div className={`${styles.contact__background} bg-lilac`}>
-        <div className="container w-75 h-100">
+        <div className={`${windowSize.containerClass} mt-3 mb-3 h-100`}>
           <div className="row h-100 d-flex justify-content-between align-items-center">
             <div className="col-12 col-lg-6">
               <div className="d-flex">
