@@ -19,7 +19,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto link--plain">
+                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto link--plain fs-5">
                   <p className="mt-auto mb-auto">
                     {"kochapas@outlook.com"}
                   </p>
@@ -31,7 +31,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto link--plain">
+                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto link--plain fs-5">
                   <p className="mt-auto mb-auto">
                     {"linkedin.com/in/kochapas"}
                   </p>
@@ -45,7 +45,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="tel:+818034446253" className="mt-auto mb-auto link--plain">
+                <a href="tel:+818034446253" className="mt-auto mb-auto link--plain fs-5">
                   <p className="mt-auto mb-auto">
                     {"+81 80 3444 6253"}
                   </p>
@@ -57,7 +57,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="https://www.github.com/kochapas" target="_blank" className="mt-auto mb-auto link--plain">
+                <a href="https://www.github.com/kochapas" target="_blank" className="mt-auto mb-auto link--plain fs-5">
                   <p className="mt-auto mb-auto">
                     {"github.com/kochapas"}
                   </p>
