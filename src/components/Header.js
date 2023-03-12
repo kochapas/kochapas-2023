@@ -12,7 +12,7 @@ export const Header = () => {
             <div className="w-auto d-flex flex-column align-items-center">
               <Image
                 alt="kochapas's picture"
-                src="/assets/parrot.jpg"
+                src="/assets/avatar.jpg"
                 width={160}
                 height={160}
                 className="rounded-circle m-2 ms-0 mb-1"

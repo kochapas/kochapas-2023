@@ -12,7 +12,7 @@ export const Footer = () => {
           className="me-2"
         />
       </a>
-      <p className="m-0">{"Made by React.js"}</p>
+      <p className="m-0">{"Made with React"}</p>
     </div>
   )
 }

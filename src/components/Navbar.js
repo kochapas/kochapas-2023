@@ -12,7 +12,7 @@ export const Navbar = ({children}) => {
         <div className="container d-flex justify-content-between">
           <div className={styles.navbar__avatar}>
             <Image
-              src="/assets/parrot.jpg"
+              src="/assets/avatar.jpg"
               alt="Navbar avatar"
               width="32"
               height="32"
