@@ -13,6 +13,7 @@ export const InformationCards = () => {
   const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
   const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
   const languages = ["thai", "english", "japanese"];
+  const educations = ["leWagonTokyo", "tni"];
 
   // TODO: Read these values from API instead.
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
@@ -101,28 +102,25 @@ export const InformationCards = () => {
             </div>
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"60px"}/>
-          <CardContainer title="Education">
-            <HistoryCard
-              title="Web Development Bootcamp"
-              placeName="Le Wagon Tokyo"
-              dateRange="07/2021 - 09/2021"
-              location="Tokyo, Japan"
-            />
-            <HistoryCard
-              title="Information Technology"
-              subtitle="Bachelor's"
-              placeName="Thai-Nichi Institute of Technology"
-              dateRange="07/2011 - 06/2015"
-              location="Bangkok, Thailand"
-            />
+          <CardContainer title={t("Education.title")}>
+            {educations?.map((education, index) => {
+              return (
+                <HistoryCard
+                  key={`education-${index}`}
+                  title={t(`Education.${education}.title`)}
+                  subtitle={t(`Education.${education}.subtitle`)}
+                  placeName={t(`Education.${education}.placeName`)}
+                  dateRange={t(`Education.${education}.dateRange`)}
+                  location={t(`Education.${education}.location`)}
+                />
+              );
+            })}
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
-          <CardContainer title="Interests">
-            <div>
-              <p>
-                {"Cooking, Puzzle, Hiking, Physical Fitness, Photography, Travelling, Video Games, DIY Projects"}
-              </p>
-            </div>
+          <CardContainer title={t("Interests.title")}>
+            <p>
+              {t("Interests.content")}
+            </p>
           </CardContainer>
         </div>
       </div>

@@ -72,11 +72,11 @@
       "title": "言語",
       "thai": {
         "title": "タイ語",
-        "level": "母国語またはバイリンガル"
+        "level": "母国語"
       },
       "english": {
         "title": "英語",
-        "level": "母国語またはバイリンガル"
+        "level": "バイリンガル"
       },
       "japanese": {
         "title": "日本語",
@@ -84,10 +84,24 @@
       }
     },
     "Education": {
-      "title": "学歴"
+      "title": "学歴",
+      "leWagonTokyo": {
+        "title": "ウェブ開発ブートキャンプ",
+        "placeName": "Le Wagon 東京",
+        "dateRange": "2021年07月 - 2021年09月",
+        "location": "日本・東京都"
+      },
+      "tni": {
+        "title": "情報学部",
+        "subtitle": "学士号",
+        "placeName": "泰日工業大学",
+        "dateRange": "2011年07月 - 2015年06月",
+        "location": "タイ・バンコク"
+      }
     },
     "Interests": {
-      "title": "趣味"
+      "title": "趣味",
+      "content": "料理、パズル、ハイキング、体力作り、写真撮影、旅行、テレビゲーム、DIYプロジェクト"
     }
   }
 }

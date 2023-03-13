@@ -84,10 +84,24 @@
       }
     },
     "Education": {
-      "title": "Education"
+      "title": "Education",
+      "leWagonTokyo": {
+        "title": "Web Development Bootcamp",
+        "placeName": "Le Wagon Tokyo",
+        "dateRange": "2021/07 - 2021/09",
+        "location": "Tokyo, Japan"
+      },
+      "tni": {
+        "title": "Information Technology",
+        "subtitle": "Bachelor's",
+        "placeName": "Thai-Nichi Institute of Technology",
+        "dateRange": "2011/07 - 2015/06",
+        "location": "Bangkok, Thailand"
+      }
     },
     "Interests": {
-      "title": "Interests"
+      "title": "Interests",
+      "content": "Cooking, Puzzle, Hiking, Physical Fitness, Photography, Travelling, Video Games, DIY Projects"
     }
   }
 }
