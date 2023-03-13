@@ -1,6 +1,6 @@
 export const HistoryCard = ({title, subtitle, placeName, dateRange, location, tasks}) => {
   return (
-    <div>
+    <div className="mb-3">
       <div className="d-flex justify-content-between align-items-center">
         <h3 className="mb-0">{title}</h3>
         <p className="mt-auto mb-0 text-muted fst-italic text-end">{subtitle}</p>

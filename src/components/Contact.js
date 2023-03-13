@@ -6,7 +6,7 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Contact = () => {
   const windowSize = useWindowSize();
-
+  // TODO: Add website URL after the host name is confirmed.
   return (
     <>
       <div id="card-contact" className={`${styles.contact__background} bg-light-lilac`}>

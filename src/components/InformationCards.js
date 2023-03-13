@@ -10,6 +10,7 @@ import { useWindowSize, useScrollLocation } from "@/hooks";
 import { useTranslation } from "react-i18next";
 
 export const InformationCards = () => {
+  // TODO: Add futuristic stripe when the page is scroll.
   const { t } = useTranslation();
   const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
   const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
