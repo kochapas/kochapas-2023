@@ -102,6 +102,9 @@
     "Interests": {
       "title": "Interests",
       "content": "Cooking, Puzzle, Hiking, Physical Fitness, Photography, Travelling, Video Games, DIY Projects"
+    },
+    "Footer": {
+      "content": "Made with React"
     }
   }
 }

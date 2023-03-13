@@ -102,6 +102,9 @@
     "Interests": {
       "title": "趣味",
       "content": "料理、パズル、ハイキング、体力作り、写真撮影、旅行、テレビゲーム、DIYプロジェクト"
+    },
+    "Footer": {
+      "content": "Reactで作られています。翻訳: DeepL Translator"
     }
   }
 }

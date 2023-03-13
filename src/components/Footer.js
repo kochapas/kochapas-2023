@@ -1,8 +1,11 @@
 import styles from "@/styles/Footer.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       id={styles.footer}
@@ -19,7 +22,7 @@ export const Footer = () => {
           size="2x"
           className="me-2"
         />
-        <p className="m-0">{"Made with React"}</p>
+        <p className="m-0">{t("Footer.content")}</p>
       </a>
     </div>
   )
