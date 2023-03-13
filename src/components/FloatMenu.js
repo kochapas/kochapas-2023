@@ -24,7 +24,7 @@ export const FloatMenu = ({ children }) => {
 
 
   return (
-    <div className="">
+    <>
       <div id={styles["float-menu"]} className="">
         <div className={`${styles["float-item"]} d-flex bg-lilac overflow-hidden mb-2 justify-content-end align-items-center`}>
           <a
@@ -71,6 +71,6 @@ export const FloatMenu = ({ children }) => {
         </div>
       </div>
       {children}
-    </div>
+    </>
   )
 }

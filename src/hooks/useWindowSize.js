@@ -5,7 +5,7 @@ export const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
-    containerClass: "container w-75",
+    containerClass: "container-fluid w-75",
   });
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export const useWindowSize = () => {
     const handleResize = () => {
       // If the screen is smaller than large size, don't squeeze the container.
       // If the screen is big enough, squeeze the container with w-75 to make the page looks like reading from paper.
-      const newContainerClass = (window.innerWidth < 992) ? "container ms-1 me-1" : "container w-75";
+      const newContainerClass = (window.innerWidth < 992) ? "container-fluid ms-1 me-1" : "container-fluid w-75";
 
       // Set window width/height to state.
       setWindowSize({
