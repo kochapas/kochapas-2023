@@ -18,7 +18,7 @@ export const Projects = () => {
       primaryType: "Shopify Application",
       secondaryType: "Production",
       description: "An application to help the merchant to manage customer's subscription contracts. Running on Shopify platform. I was working closely on this project to implement new features and maintaining the app while I was working with GO RIDE.",
-      roles: "Fullstack Developer / Team Member",
+      roles: ["Fullstack Developer", "Team Member"],
       stacks: ["Node", "React", "GraphQL", "PostgresQL"],
       imgSrc: "/assets/projects/gosub.png",
       link: "https://apps.shopify.com/go-subscride",
@@ -28,7 +28,7 @@ export const Projects = () => {
       primaryType: "Shopify Application",
       secondaryType: "Production",
       description: "An application to help merchant to migrate their customers' payment information from Stripe platform to Shopify platform. I create this custom application to help my team member from doing repetitive task during the store's migration process.",
-      roles: "Fullstack Developer / Solo Member",
+      roles: ["Fullstack Developer", "Solo Member"],
       stacks: ["Node", "React"],
       imgSrc: "/assets/projects/stripe.png",
     },
@@ -37,7 +37,7 @@ export const Projects = () => {
       primaryType: "Web Application",
       secondaryType: "Production",
       description: "An application that helps create sustainability and connect the business to their target consumer. I voluntarily work with them to make the world a better place for future generations.",
-      roles: "Frontend Developer / Team Member",
+      roles: ["Frontend Developer", "Team Member"],
       stacks: ["React"],
       imgSrc: "/assets/projects/mamoru.png",
       link: "https://app.mamoru.earth"
@@ -47,7 +47,7 @@ export const Projects = () => {
       primaryType: "Web Application",
       secondaryType: "Side Project / Discontinued",
       description: "An application I creates with my teammate during coding bootcamp. The goals of the application is to help foreigers who travel or lives in the other country where they can't read the local language. BarcSnap helping them by telling the detailed information of the product by just scanning the barcode without being able to read the product's name.",
-      roles: "Fullstack Developer / Team Leader",
+      roles: ["Fullstack Developer", "Team Leader"],
       stacks: ["Ruby on Rails", "PostgresQL"],
       imgSrc: "/assets/projects/barcsnap.png",
       link: "https://github.com/2tonepantone/barcsnap"
@@ -85,15 +85,13 @@ export const Projects = () => {
           return (
             <div key={`project-${index}`} className="col-12 col-lg-6">
               <div className={`${styles["project__card"]} card-container mt-3 p-3`}>
-                <div className={`${styles["card__image"]}`}>
-                  <Image
-                    alt={`${name}'s screenshot`}
-                    src={imgSrc || DEFAULT_IMG_SRC}
-                    width={480}
-                    height={230}
-                    className="w-100 h-auto pt-2 mb-3"
-                  />
-                </div>
+                <Image
+                  alt={`${name}'s screenshot`}
+                  src={imgSrc || DEFAULT_IMG_SRC}
+                  width={480}
+                  height={230}
+                  className="w-100 h-auto pt-2 mb-3"
+                />
                 <div>
                   {(!!link) ?
                     <a
@@ -116,9 +114,31 @@ export const Projects = () => {
                     <p className="badge bg-secondary rounded-pill m-0 w-auto">{secondaryType}</p>
                   </div>}
                 </div>
-                {(!!roles) && <p className="mt-2 mb-1">Roles: {roles}</p>}
+                {(!!roles?.length) &&
+                  <div className="mt-2 mb-1">
+                    {roles?.map((role,index) =>
+                      <p
+                        key={`role-${index}`}
+                        className="badge bg-lilac rounded-pill mb-0 me-2 text-black"
+                      >
+                        {role}
+                      </p>
+                    )}
+                  </div>
+                }
                 {(!!description) && <p className="mt-2 mb-1">{description}</p>}
-                {(!!stacks) && <p className="mt-2 mb-1">Stacks: {stacks}</p>}
+                {(!!stacks?.length) &&
+                  <div className="mt-2 mb-1">
+                    {stacks?.map((stack,index) =>
+                      <p
+                        key={`stack-${index}`}
+                        className="badge bg-info rounded-pill mb-0 me-2"
+                      >
+                        {stack}
+                      </p>
+                    )}
+                  </div>
+                }
               </div>
             </div>
           )

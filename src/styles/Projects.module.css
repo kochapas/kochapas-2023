@@ -25,10 +25,6 @@
   overflow: hidden;
 }
 
-.project__card .card__image {
-
-}
-
 @media (width < 992px){
   @keyframes show {
     0% { max-height: 0px; }
@@ -42,7 +38,7 @@
 
   .projects-container--show {
     overflow: hidden;
-    max-height: 2000px;
+    max-height: 4000px;
     animation: show 2s;
   }
 
