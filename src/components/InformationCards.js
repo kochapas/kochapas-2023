@@ -6,10 +6,12 @@ import {
   ExpandableSpace
 } from "@/components"
 import { useWindowSize, useScrollLocation } from "@/hooks";
+import { useTranslation } from "react-i18next";
 
 export const InformationCards = () => {
-  // TODO: create useTranslation hook.
+  const { t } = useTranslation();
   // TODO: Read these values from API instead.
+  const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
   const windowSize = useWindowSize();
   const scrollLocation = useScrollLocation();
@@ -29,38 +31,27 @@ export const InformationCards = () => {
         {/* Left column */}
         <div className="col-12 col-lg-6">
           <ExpandableSpace expanded={spaceExpanded} height={"20px"}/>
-          <CardContainer title="Work Experience">
-            <HistoryCard
-              title="Full-Stack Web Developer"
-              subtitle="Permanent"
-              placeName="GO RIDE Republic"
-              dateRange="09/2021 - 03/2023"
-              location="Tokyo, Japan"
-              tasks={[
-                "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
-                "Designed and maintained databases using GraphQL and PostgresQL.",
-                "Helped to train and onboard new employees.",
-                "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
-                "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
-              ]}
-            />
-            <HistoryCard
-              title="GIS Software Developer"
-              subtitle="Permanent"
-              placeName="MapQuestAsia"
-              dateRange="06/2015 - 06/2020"
-              location="Bangkok, Thailand"
-              tasks={[
-                "Design, code, test, and report windows/web applications based on requirements. Specialize in C# language.",
-              ]}
-            />
-            <HistoryCard
-              title="iOS Developer"
-              subtitle="Internship"
-              placeName="GMM Grammy"
-              dateRange="06/2014 - 08/2014"
-              location="Bangkok, Thailand"
-            />
+          <CardContainer title={t("WorkExperience.title")}>
+            {workExperiences.map((work, index) => {
+              return (
+                <HistoryCard
+                  key={`work-${index}`}
+                  title={t(`WorkExperience.${work}.title`)}
+                  subtitle={t(`WorkExperience.${work}.subtitle`)}
+                  placeName={t(`WorkExperience.${work}.placeName`)}
+                  dateRange={t(`WorkExperience.${work}.dateRange`)}
+                  location={t(`WorkExperience.${work}.location`)}
+                  // Support up to five tasks per one work place.
+                  tasks={[
+                    t(`WorkExperience.${work}.tasks.1`),
+                    t(`WorkExperience.${work}.tasks.2`),
+                    t(`WorkExperience.${work}.tasks.3`),
+                    t(`WorkExperience.${work}.tasks.4`),
+                    t(`WorkExperience.${work}.tasks.5`),
+                  ].filter((task) => !!task)}
+                />
+              )
+            })}
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title="Freelance / Volunteer">

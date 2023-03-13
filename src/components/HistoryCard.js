@@ -10,7 +10,7 @@ export const HistoryCard = ({title, subtitle, placeName, dateRange, location, ta
         <p className="mb-0 text-muted fst-italic">{dateRange}</p>
         <p className="mb-0 text-muted fst-italic text-end">{location}</p>
       </div>
-      {tasks && <p className="mb-0">Tasks</p>}
+      {!!tasks?.length && <p className="mb-0">Tasks</p>}
       <ul>
         {tasks?.map((task, index) => {
           return (

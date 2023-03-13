@@ -8,11 +8,12 @@
       "location": "Tokyo, Japan"
     },
     "WorkExperience": {
+      "title": "Work Experience",
       "goRide": {
         "title": "Full-Stack Developer",
         "subtitle": "Permanent",
-        "placeName": "GO RIDE Republic",
-        "dateRange": "09/2021 - 03/2023",
+        "placeName": "GO RIDE, INC.",
+        "dateRange": "2021/09 - 2023/03",
         "location": "Tokyo, Japan",
         "tasks": {
           "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
@@ -21,7 +22,39 @@
           "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
           "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
         }
+      },
+      "mapQuestAsia": {
+        "title": "GIS Software Developer",
+        "subtitle": "Permanent",
+        "placeName": "MapQuestAsia",
+        "dateRange": "2015/06 - 2020/06",
+        "location": "Bangkok, Thailand",
+        "tasks": {
+          "1": "Design, code, test, and report windows/web applications based on requirements. Specialize in C# language."
+        }
+      },
+      "gmmGrammy": {
+        "title": "iOS Developer",
+        "subtitle": "Internship",
+        "placeName": "GMM Grammy PLC",
+        "dateRange": "2014/06 - 2014/08",
+        "location": "Bangkok, Thailand"
       }
+    },
+    "FreeLanceVolunteer": {
+      "title": "Freelance / Volunteer"
+    },
+    "Skills": {
+      "title": "Skills"
+    },
+    "Languages": {
+      "title": "Languages"
+    },
+    "Education": {
+      "title": "Education"
+    },
+    "Interests": {
+      "title": "Interests"
     }
   }
 }

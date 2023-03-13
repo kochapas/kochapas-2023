@@ -1,27 +1,60 @@
 {
   "translation": {
     "Header": {
-      "name": "サンチブット　コチャパス（アレン）",
+      "name": "サンチブット コチャパス（アレン）",
       "title": "フルスタックエンジニア",
       "description": "2014年から複数のプログラミング言語に精通した経験豊富なコーダー。",
       "subDescription": "タイ・バンコク出身。生活の質の向上と職場の効率化のために、自分のスキルや専門知識を活用する機会を求めている。",
-      "location": "東京、日本"
+      "location": "日本・東京都"
     },
     "WorkExperience": {
+      "title": "職歴",
       "goRide": {
         "title": "フルスタックエンジニア",
-        "subtitle": "Permanent",
-        "placeName": "GO RIDE Republic",
+        "subtitle": "正社員",
+        "placeName": "株式会社 GO RIDE",
         "dateRange": "09/2021 - 03/2023",
-        "location": "東京、日本",
+        "location": "日本・東京都",
         "tasks": {
-          "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
-          "2": "Designed and maintained databases using GraphQL and PostgresQL.",
-          "3": "Helped to train and onboard new employees.",
-          "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
-          "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
+          "1": "バックエンドにNode.js、フロントエンドにReact.jsを利用したShopifyプラットフォーム上のWebアプリケーションを開発した。",
+          "2": "GraphQLとPostgresQLを利用したデータベースの設計と保守",
+          "3": "新入社員のトレーニングやオンボードを支援した。",
+          "4": "コードレビューを実施し、他のチームメンバーにフィードバックを提供し、コードの品質と一貫性を確保した。",
+          "5": "会社のアプリケーションについて分析を行い、効率を高めるための洞察を提供するとともに、改善を実施するためのタイムラインを戦略化する。"
         }
+      },
+      "mapQuestAsia": {
+        "title": "GISソフトウェアエンジニア",
+        "subtitle": "正社員",
+        "placeName": "MapQuestAsia",
+        "dateRange": "2015/06 - 2020/06",
+        "location": "タイ・バンコク",
+        "tasks": {
+          "1": "要件に基づき、Windows/Webアプリケーションの設計、コーディング、テスト、報告を行う。C#言語に特化している。"
+        }
+      },
+      "gmmGrammy": {
+        "title": "iOS エンジニア",
+        "subtitle": "インターンシップ",
+        "placeName": "GMMグラミー",
+        "dateRange": "2014/06 - 2014/08",
+        "location": "タイ・バンコク"
       }
+    },
+    "FreeLanceVolunteer": {
+      "title": "フリーランス / ボランティア"
+    },
+    "Skills": {
+      "title": "特技"
+    },
+    "Languages": {
+      "title": "特技"
+    },
+    "Education": {
+      "title": "学歴"
+    },
+    "Interests": {
+      "title": "趣味"
     }
   }
 }

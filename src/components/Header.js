@@ -32,22 +32,10 @@ export const Header = () => {
               </div>
             </div>
             <div className="col-12 col-lg-9 mt-2">
-              <div>
-                <h1>
-                  Kochapas Santibut (Allen)
-                </h1>
-              </div>
-              <div>
-                <h2>
-                  Full-Stack Developer
-                </h2>
-              </div>
-              <div className="mt-4">
-                <p className="mb-2">
-                  Experienced coder proficient in multiple programming languages since 2014.
-                </p>
-                <p>Originally from Bangkok, Thailand. Seeking opportunities to utilize my skills and expertise to enhance quality of life and promote workplace efficiency.</p>
-              </div>
+              <h1>{t("Header.name")}</h1>
+              <h2>{t("Header.title")}</h2>
+              <p className="mt-4 mb-2">{t("Header.description")}</p>
+              <p>{t("Header.subDescription")}</p>
             </div>
           </div>
         </div>
