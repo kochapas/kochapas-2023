@@ -3,7 +3,8 @@ import {
   BadgeContainer,
   CardContainer,
   HistoryCard,
-  ExpandableSpace
+  ExpandableSpace,
+  Skeleton
 } from "@/components"
 import { useWindowSize, useScrollLocation } from "@/hooks";
 import { useTranslation } from "react-i18next";
@@ -16,17 +17,22 @@ export const InformationCards = () => {
   const educations = ["leWagonTokyo", "tni"];
 
   const [skills, setSkills] = useState([]);
+  const [skillsLoading, setSkillsLoading] = useState(true);
 
   const windowSize = useWindowSize();
   const scrollLocation = useScrollLocation();
   const [spaceExpanded, setSpaceExpanded] = useState(false);
 
   const fetchSkill = async () => {
+    // Set loading to true to render Skeleton component.
+    setSkillsLoading(true);
     await fetch("/api/skills").then(async (res) => {
       await res.json().then((data) => {
         setSkills(data.skills);
+        setSkillsLoading(false);
       }).catch((error) => {
         console.error({ error });
+        setSkillsLoading(false);
       })
     });
   };
@@ -102,7 +108,10 @@ export const InformationCards = () => {
         <div className="col-12 col-lg-6">
           <ExpandableSpace expanded={spaceExpanded} height={"80px"}/>
           <CardContainer title={t("Skills.title")}>
-            <BadgeContainer contents={skills} />
+            { skillsLoading ?
+              <Skeleton width="" height="200px" />
+              : <BadgeContainer contents={skills} />
+            }
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title={t("Languages.title")}>
