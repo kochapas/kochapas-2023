@@ -27,10 +27,10 @@
   width: fit-content;
   max-width: 48px;
   border-radius: 48px;
-  animation: collaspWidth 1s;
+  animation: collaspWidth 0.5s;
 }
 
 .float-item:hover {
   max-width: 200px;
-  animation: expandWidth 1s;
+  animation: expandWidth 0.5s;
 }

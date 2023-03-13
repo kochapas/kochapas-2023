@@ -6,7 +6,6 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Header = () => {
   const windowSize = useWindowSize();
-  // TODO: Add PDF download button.
 
   return (
     <>

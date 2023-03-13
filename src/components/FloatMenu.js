@@ -28,6 +28,7 @@ export const FloatMenu = ({ children }) => {
           </a>
         </div>
         <div className={`${styles["float-item"]} d-flex bg-lilac overflow-hidden mb-2 justify-content-end align-items-center`}>
+          {/* First, render all other languages. */}
           {supportedLanguage.filter((lang) => lang !== selectedLanguage)
             .map((lang, index) =>
               <div key={`lang-${index}`} className="ms-1 me-1">
@@ -38,6 +39,7 @@ export const FloatMenu = ({ children }) => {
               </div>
             )
           }
+          {/* Render user's selected language. */}
           <div className="ms-1 me-1">
             <CircleFlag countryCode={selectedLanguage} height="40" />
           </div>
