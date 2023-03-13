@@ -9,7 +9,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div id="card-contact" className={`${styles.contact__background} bg-lilac`}>
+      <div id="card-contact" className={`${styles.contact__background} bg-light-lilac`}>
         <div className={`${windowSize.containerClass} mt-3 mb-3 h-100`}>
           <div className="row h-100 d-flex justify-content-between align-items-center">
             <div className="col-12 col-lg-6">
@@ -19,7 +19,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto link--plain fs-5">
+                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
                     {"kochapas@outlook.com"}
                   </p>
@@ -31,7 +31,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto link--plain fs-5">
+                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
                     {"linkedin.com/in/kochapas"}
                   </p>
@@ -45,7 +45,7 @@ export const Contact = () => {
                   size="2x"
                   className="me-3"
                 />
-                <a href="tel:+818034446253" className="mt-auto mb-auto link--plain fs-5">
+                <a href="tel:+818034446253" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
                     {"+81 80 3444 6253"}
                   </p>
@@ -58,7 +58,7 @@ export const Contact = () => {
                   className="me-3"
                 />
                 <a href="https://www.github.com/kochapas"
-                  className="mt-auto mb-auto link--plain fs-5"
+                  className="mt-auto mb-auto text-decoration-none fs-5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

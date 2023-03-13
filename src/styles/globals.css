@@ -10,17 +10,12 @@ a:hover {
   color: darkslateblue;
 }
 
+.bg-light-lilac {
+  background-color: rgb(230, 220, 255);
+}
+
 .bg-lilac {
   background-color: rgb(220, 200, 255);
-}
-
-.link--plain {
-  text-decoration: none;
-  color: #212529;
-}
-
-.link--plain:hover {
-  color: #212529;
 }
 
 #badge-container:first-child {
