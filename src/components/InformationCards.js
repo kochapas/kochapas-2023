@@ -15,11 +15,28 @@ export const InformationCards = () => {
   const languages = ["thai", "english", "japanese"];
   const educations = ["leWagonTokyo", "tni"];
 
-  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
+  const [skills, setSkills] = useState([]);
 
   const windowSize = useWindowSize();
   const scrollLocation = useScrollLocation();
   const [spaceExpanded, setSpaceExpanded] = useState(false);
+
+  const fetchSkill = async () => {
+    await fetch("/api/skills").then(async (res) => {
+      await res.json().then((data) => {
+        setSkills(data.skills);
+      }).catch((error) => {
+        console.error({ error });
+      })
+    });
+  };
+
+  useEffect(() => {
+    // If there's no skill data, fetch it from the API.
+    if (!!skills?.length === false) {
+      fetchSkill();
+    }
+  }, [skills])
 
   useEffect(() => {
     if (scrollLocation?.y > 20) {

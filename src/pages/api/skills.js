@@ -1,5 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 // IDK why would I need an API for this project.
 // Create simple API to demonstrate how to call API from frontend.
 export default function handler(req, res) {
@@ -9,5 +7,7 @@ export default function handler(req, res) {
     return;
   }
 
-  res.status(200).json({skills: ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"] });
+  // Assuming that this information was read from the DB.
+  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
+  res.status(200).json({ skills });
 }
