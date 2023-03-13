@@ -118,7 +118,7 @@
         "description": "An application that operates on the Shopify platform and is designed to assist merchants in managing their customers' subscription contracts. While I was employed at GO RIDE, I was closely involved in implementing new features and maintaining the application.",
         "roles": "Fullstack Developer,Team Member",
         "stacks": "Node,React,GraphQL,PostgresQL",
-        "imgSrc": "/assets/projects/gosub.png",
+        "imgSrc": "/assets/projects/gosub.jpg",
         "url": "https://apps.shopify.com/go-subscride"
       },
       "stripe": {
@@ -128,7 +128,7 @@
         "description": "An application designed to assist merchants in migrating their customers' payment information from the Stripe platform to the Shopify platform. I developed a customized application to assist my team members in avoiding repetitive tasks during the store migration process.",
         "roles": "Fullstack Developer,Solo Member",
         "stacks": "Node,React,GraphQL",
-        "imgSrc": "/assets/projects/stripe.png"
+        "imgSrc": "/assets/projects/stripe.jpg"
       },
       "mamoru": {
         "name": "mamoru.earth",
@@ -137,7 +137,7 @@
         "description": "An application that promotes sustainability and fosters a connection between a business and its target consumers. I choose to work with them voluntarily in order to contribute to creating a better world for future generations.",
         "roles": "Frontend Developer,Team Member",
         "stacks": "React",
-        "imgSrc": "/assets/projects/mamoru.png",
+        "imgSrc": "/assets/projects/mamoru.jpg",
         "url": "https://app.mamoru.earth"
       },
       "barcSnap": {
@@ -147,7 +147,7 @@
         "description": "An application that I developed alongside my teammates during our coding bootcamp. The primary objective of this application is to assist foreigners who are traveling or residing in a foreign country where they cannot read the local language. BarcSnap enables them to scan the barcode of a product and receive detailed information about it, even if they cannot read the product's name.",
         "roles": "Fullstack Developer,Team Leader",
         "stacks": "Ruby on Rails,PostgresQL",
-        "imgSrc": "/assets/projects/barcsnap.png",
+        "imgSrc": "/assets/projects/barcsnap.jpg",
         "url": "https://github.com/2tonepantone/barcsnap"
       }
     },
