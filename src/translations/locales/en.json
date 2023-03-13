@@ -69,7 +69,19 @@
       "title": "Skills"
     },
     "Languages": {
-      "title": "Languages"
+      "title": "Languages",
+      "thai": {
+        "title": "Thai",
+        "level": "Native / Billingual"
+      },
+      "english": {
+        "title": "English",
+        "level": "Native / Billingual"
+      },
+      "japanese": {
+        "title": "Japanese",
+        "level": "Conversational"
+      }
     },
     "Education": {
       "title": "Education"

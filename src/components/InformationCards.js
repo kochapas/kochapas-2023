@@ -12,6 +12,7 @@ export const InformationCards = () => {
   const { t } = useTranslation();
   const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
   const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
+  const languages = ["thai", "english", "japanese"];
 
   // TODO: Read these values from API instead.
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
@@ -83,24 +84,20 @@ export const InformationCards = () => {
         {/* Right column */}
         <div className="col-12 col-lg-6">
           <ExpandableSpace expanded={spaceExpanded} height={"80px"}/>
-          <CardContainer title="Skills">
+          <CardContainer title={t("Skills.title")}>
             <BadgeContainer contents={skills} />
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
-          <CardContainer title="Languages">
+          <CardContainer title={t("Languages.title")}>
             <div className="row">
-              <div className="col-12 col-lg-4">
-                <p className="mb-0">Thai</p>
-                <p className="mb-2 text-muted fst-italic">{"Native / Billingual"}</p>
-              </div>
-              <div className="col-12 col-lg-4">
-                <p className="mb-0">English</p>
-                <p className="mb-2 text-muted fst-italic">{"Native / Billingual"}</p>
-              </div>
-              <div className="col-12 col-lg-4">
-                <p className="mb-0">Japanese</p>
-                <p className="mb-0 text-muted fst-italic">{"Conversational"}</p>
-              </div>
+              {languages?.map((lang, index) => {
+                return (
+                  <div key={`language-${index}`} className="col-12 col-lg-4">
+                    <p className="mb-0">{t(`Languages.${lang}.title`)}</p>
+                    <p className="mb-2 text-muted fst-italic">{t(`Languages.${lang}.level`)}</p>
+                  </div>
+                )
+              })}
             </div>
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"60px"}/>
