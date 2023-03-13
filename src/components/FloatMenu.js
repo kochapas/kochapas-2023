@@ -22,7 +22,6 @@ export const FloatMenu = ({ children }) => {
     i18n.changeLanguage(languagePair[lang]);
   }
 
-
   return (
     <>
       <div id={styles["float-menu"]} className="">
@@ -31,14 +30,13 @@ export const FloatMenu = ({ children }) => {
             href="https://drive.google.com/file/d/1MxAOdkWBii9s1xjLn0H5tdAMQQ9HtqjK"
             target="_blank"
             rel="noopener noreferrer"
-            className="d-flex text-nowrap text-decoration-none ms-3 me-2 pe-1"
+            className="d-flex align-items-center text-nowrap text-decoration-none ms-3 me-2 pe-1"
           >
-            <p className="m-0 me-3">Download my CV!</p>
+            <p className="m-0 me-3">{t("FloatMenu.cv.label")}</p>
             <FontAwesomeIcon
-                icon={faFileArrowDown}
-                size="2x"
-                className=""
-              />
+              icon={faFileArrowDown}
+              size="2x"
+            />
           </a>
         </div>
         <div className={`${styles["float-item"]} d-flex bg-lilac overflow-hidden mb-2 justify-content-end align-items-center`}>

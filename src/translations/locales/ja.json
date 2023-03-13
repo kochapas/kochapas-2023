@@ -7,6 +7,11 @@
       "subDescription": "タイ・バンコク出身。生活の質の向上と職場の効率化のために、自分のスキルや専門知識を活用する機会を求めている。",
       "location": "日本・東京都"
     },
+    "FloatMenu": {
+      "cv": {
+        "label": "CV ダウンロード"
+      }
+    },
     "WorkExperience": {
       "title": "職歴",
       "goRide": {
