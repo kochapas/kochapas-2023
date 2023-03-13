@@ -12,7 +12,6 @@ export const Navbar = ({children}) => {
   const [navbarClass, setNavbarClass] = useState("d-none");
 
   useEffect(() => {
-    console.log("hoook");
     // Check if user scolled pass the contact information, if so, show navbar.
     const targetRect = document?.getElementById("card-contact")?.getBoundingClientRect();
     if (targetRect && (targetRect.y + targetRect.height < 0)) {
