@@ -10,9 +10,12 @@ import { useTranslation } from "react-i18next";
 
 export const InformationCards = () => {
   const { t } = useTranslation();
-  // TODO: Read these values from API instead.
   const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
+  const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
+
+  // TODO: Read these values from API instead.
   const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Git", "GitHub", "GitHub Projects", "Trello", "Photoshop", "Figmas"];
+
   const windowSize = useWindowSize();
   const scrollLocation = useScrollLocation();
   const [spaceExpanded, setSpaceExpanded] = useState(false);
@@ -55,27 +58,26 @@ export const InformationCards = () => {
           </CardContainer>
           <ExpandableSpace expanded={spaceExpanded} height={"40px"}/>
           <CardContainer title="Freelance / Volunteer">
-            <HistoryCard
-              title="Frontend Developer"
-              subtitle="Volunteer"
-              placeName="Mamoru"
-              dateRange="09/2021 - Present"
-              location="Tokyo, Japan"
-              tasks={[
-                "Volunteered with the Mamoru team to develop a website that promotes global sustainability.",
-                "Utilized React.js to build the frontend, provided code reviews, and mentorship to junior team members."
-              ]}
-            />
-            <HistoryCard
-              title="Coding Teaching Assistant"
-              subtitle="Freelance"
-              placeName="Le Wagon Tokyo"
-              dateRange="07/2022 - 12/2022"
-              location="Tokyo, Japan"
-              tasks={[
-                "Collaborated with a coding instructor in a coding bootcamp, providing guidance and mentorship to students on website development using Ruby on Rails.",
-              ]}
-            />
+            {otherWorkExperiences.map((work, index) => {
+              return (
+                <HistoryCard
+                  key={`otherWork-${index}`}
+                  title={t(`FreeLanceVolunteer.${work}.title`)}
+                  subtitle={t(`FreeLanceVolunteer.${work}.subtitle`)}
+                  placeName={t(`FreeLanceVolunteer.${work}.placeName`)}
+                  dateRange={t(`FreeLanceVolunteer.${work}.dateRange`)}
+                  location={t(`FreeLanceVolunteer.${work}.location`)}
+                  // Support up to five tasks per one work place.
+                  tasks={[
+                    t(`FreeLanceVolunteer.${work}.tasks.1`),
+                    t(`FreeLanceVolunteer.${work}.tasks.2`),
+                    t(`FreeLanceVolunteer.${work}.tasks.3`),
+                    t(`FreeLanceVolunteer.${work}.tasks.4`),
+                    t(`FreeLanceVolunteer.${work}.tasks.5`),
+                  ].filter((task) => !!task)}
+                />
+              )
+            })}
           </CardContainer>
         </div>
         {/* Right column */}

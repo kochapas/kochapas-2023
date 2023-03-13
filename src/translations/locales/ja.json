@@ -13,7 +13,7 @@
         "title": "フルスタックエンジニア",
         "subtitle": "正社員",
         "placeName": "株式会社 GO RIDE",
-        "dateRange": "09/2021 - 03/2023",
+        "dateRange": "2021年09月 - 2023年03月",
         "location": "日本・東京都",
         "tasks": {
           "1": "バックエンドにNode.js、フロントエンドにReact.jsを利用したShopifyプラットフォーム上のWebアプリケーションを開発した。",
@@ -27,7 +27,7 @@
         "title": "GISソフトウェアエンジニア",
         "subtitle": "正社員",
         "placeName": "MapQuestAsia",
-        "dateRange": "2015/06 - 2020/06",
+        "dateRange": "2015年06月 - 2020年06月",
         "location": "タイ・バンコク",
         "tasks": {
           "1": "要件に基づき、Windows/Webアプリケーションの設計、コーディング、テスト、報告を行う。C#言語に特化している。"
@@ -37,18 +37,39 @@
         "title": "iOS エンジニア",
         "subtitle": "インターンシップ",
         "placeName": "GMMグラミー",
-        "dateRange": "2014/06 - 2014/08",
+        "dateRange": "2014年06月 - 2014年08月",
         "location": "タイ・バンコク"
       }
     },
     "FreeLanceVolunteer": {
-      "title": "フリーランス / ボランティア"
+      "title": "フリーランス / ボランティア",
+      "mamoru": {
+        "title": "フロントエンドエンジニア",
+        "subtitle": "ボランティア",
+        "placeName": "Mamoru",
+        "dateRange": "2021年09月 - 現在",
+        "location": "日本・東京都",
+        "tasks": {
+          "1": "Mamoruチームとボランティアで、地球規模の持続可能性を促進するウェブサイトを開発しました。",
+          "2": "React.jsを活用してフロントエンドを構築し、コードレビューを行い、ジュニアチームメンバーのメンターとなった。"
+        }
+      },
+      "leWagonTokyo": {
+        "title": "ティーチングアシスタント",
+        "subtitle": "フリーランス",
+        "placeName": "Le Wagon 東京",
+        "dateRange": "2022年07月 - 2022年12月",
+        "location": "日本・東京都",
+        "tasks": {
+          "1": "コーディングブートキャンプでコーディング講師と協力し、Ruby on Railsを使ったWebサイト開発について受講生に指導を行った。"
+        }
+      }
     },
     "Skills": {
       "title": "特技"
     },
     "Languages": {
-      "title": "特技"
+      "title": "言語"
     },
     "Education": {
       "title": "学歴"

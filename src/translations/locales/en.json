@@ -42,7 +42,28 @@
       }
     },
     "FreeLanceVolunteer": {
-      "title": "Freelance / Volunteer"
+      "title": "Freelance / Volunteer",
+      "mamoru": {
+        "title": "Frontend Developer",
+        "subtitle": "Volunteer",
+        "placeName": "Mamoru",
+        "dateRange": "2021/09 - Present",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Volunteered with the Mamoru team to develop a website that promotes global sustainability.",
+          "2": "Utilized React.js to build the frontend, provided code reviews, and mentorship to junior team members."
+        }
+      },
+      "leWagonTokyo": {
+        "title": "Coding Teaching Assistant",
+        "subtitle": "Freelance",
+        "placeName": "Le Wagon Tokyo",
+        "dateRange": "2022/07 - 2022/12",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Collaborated with a coding instructor in a coding bootcamp, providing guidance and mentorship to students on website development using Ruby on Rails."
+        }
+      }
     },
     "Skills": {
       "title": "Skills"
