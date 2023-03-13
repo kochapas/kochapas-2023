@@ -2,7 +2,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  margin-right: 2em;
+  margin-right: 1em;
   margin-bottom: 1em;
   height: fit-content;
   display: flex;
@@ -13,11 +13,11 @@
 
 @keyframes expandWidth {
   0% { max-width: 48px; }
-  100% { max-width: 80px; }
+  100% { max-width: 200px; }
 }
 
 @keyframes collaspWidth {
-  0% { max-width: 80px; }
+  0% { max-width: 200px; }
   100% { max-width: 48px; }
 }
 
@@ -31,6 +31,6 @@
 }
 
 .float-item:hover {
-  max-width: 80px;
+  max-width: 200px;
   animation: expandWidth 1s;
 }
