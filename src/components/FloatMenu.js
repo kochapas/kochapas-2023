@@ -1,13 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/styles/FloatMenu.module.css";
 import { CircleFlag } from 'react-circle-flags'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export const FloatMenu = ({ children }) => {
+  const { t, i18n } = useTranslation();
   const supportedLanguage = ["jp", "us"];
   const defaultLanguage = "us";
-  const selectedLanguage = defaultLanguage;
+  const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
+
+  // Convert country code to language code.
+  const languagePair = {
+    us: "en",
+    jp: "ja",
+  }
+
+  const handleLanguageChange = (lang) => {
+    setSelectedLanguage(lang);
+    i18n.changeLanguage(languagePair[lang]);
+  }
+
 
   return (
     <div className="">
@@ -31,7 +45,13 @@ export const FloatMenu = ({ children }) => {
           {/* First, render all other languages. */}
           {supportedLanguage.filter((lang) => lang !== selectedLanguage)
             .map((lang, index) =>
-              <div key={`lang-${index}`} className="ms-1 me-1">
+              <div
+                key={`lang-${index}`}
+                className="ms-1 me-1"
+                onClick={() => {
+                  handleLanguageChange(lang);
+                }}
+              >
                 <CircleFlag
                   countryCode={lang}
                   height="40"
@@ -40,7 +60,12 @@ export const FloatMenu = ({ children }) => {
             )
           }
           {/* Render user's selected language. */}
-          <div className="ms-1 me-1">
+          <div
+            className="ms-1 me-1"
+            onClick={() => {
+              handleLanguageChange(selectedLanguage);
+            }}
+          >
             <CircleFlag countryCode={selectedLanguage} height="40" />
           </div>
         </div>

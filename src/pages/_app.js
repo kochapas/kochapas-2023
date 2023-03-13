@@ -5,6 +5,7 @@ import {
   Navbar,
   FloatMenu
 } from "@/components";
+import "@/translations/i18n";
 // Since fontawesome css is imported above. Stop it from importing again.
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;

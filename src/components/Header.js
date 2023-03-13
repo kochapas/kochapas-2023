@@ -3,9 +3,11 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useWindowSize } from "@/hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const windowSize = useWindowSize();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -26,7 +28,7 @@ export const Header = () => {
                   size="1x"
                   className="me-2 mt-1"
                 />
-                <p>Tokyo, Japan</p>
+                <p className="mb-0">{t("Header.location")}</p>
               </div>
             </div>
             <div className="col-12 col-lg-9 mt-2">

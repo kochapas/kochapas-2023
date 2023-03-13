@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "Header": {
+      "name": "Kochapas Santibut (Allen)",
+      "title": "Full-Stack Developer",
+      "description": "Experienced coder proficient in multiple programming languages since 2014.",
+      "subDescription": "Originally from Bangkok, Thailand. Seeking opportunities to utilize my skills and expertise to enhance quality of life and promote workplace efficiency.",
+      "location": "Tokyo, Japan"
+    },
+    "WorkExperience": {
+      "goRide": {
+        "title": "Full-Stack Developer",
+        "subtitle": "Permanent",
+        "placeName": "GO RIDE Republic",
+        "dateRange": "09/2021 - 03/2023",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
+          "2": "Designed and maintained databases using GraphQL and PostgresQL.",
+          "3": "Helped to train and onboard new employees.",
+          "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
+          "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
+        }
+      }
+    }
+  }
+}

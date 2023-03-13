@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "Header": {
+      "name": "サンチブット　コチャパス（アレン）",
+      "title": "フルスタックエンジニア",
+      "description": "2014年から複数のプログラミング言語に精通した経験豊富なコーダー。",
+      "subDescription": "タイ・バンコク出身。生活の質の向上と職場の効率化のために、自分のスキルや専門知識を活用する機会を求めている。",
+      "location": "東京、日本"
+    },
+    "WorkExperience": {
+      "goRide": {
+        "title": "フルスタックエンジニア",
+        "subtitle": "Permanent",
+        "placeName": "GO RIDE Republic",
+        "dateRange": "09/2021 - 03/2023",
+        "location": "東京、日本",
+        "tasks": {
+          "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
+          "2": "Designed and maintained databases using GraphQL and PostgresQL.",
+          "3": "Helped to train and onboard new employees.",
+          "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
+          "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
+        }
+      }
+    }
+  }
+}
