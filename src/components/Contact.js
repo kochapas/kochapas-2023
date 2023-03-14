@@ -1,7 +1,12 @@
 import styles from "@/styles/Contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareEnvelope,
+  faSquarePhone,
+  faHouseLaptop,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Contact = () => {
@@ -14,11 +19,13 @@ export const Contact = () => {
           <div className="row h-100 d-flex justify-content-between align-items-center">
             <div className="col-12 col-lg-6">
               <div className="d-flex">
-                <FontAwesomeIcon
-                  icon={faSquareEnvelope}
-                  size="2x"
-                  className="me-3"
-                />
+                <div className={`${styles["contact__icon"]} d-flex justify-content-center`}>
+                  <FontAwesomeIcon
+                    icon={faSquareEnvelope}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
                 <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
                     {"kochapas@outlook.com"}
@@ -26,44 +33,86 @@ export const Contact = () => {
                 </a>
               </div>
               <div className="d-flex mt-3">
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="2x"
-                  className="me-3"
-                />
+                <div className={`${styles["contact__icon"]}`}>
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
                 <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
-                    {"linkedin.com/in/kochapas"}
+                    {"www.linkedin.com/in/kochapas"}
                   </p>
                 </a>
               </div>
-            </div>
-            <div className="col-12 col-lg-6">
-              <div className="d-flex mt-3 mt-lg-0">
-                <FontAwesomeIcon
-                  icon={faSquarePhone}
-                  size="2x"
-                  className="me-3"
-                />
+              <div className="d-flex mt-3">
+                <div className={`${styles["contact__icon"]}`}>
+                  <FontAwesomeIcon
+                    icon={faSquarePhone}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
                 <a href="tel:+818034446253" className="mt-auto mb-auto text-decoration-none fs-5">
                   <p className="mt-auto mb-auto">
                     {"+81 80 3444 6253"}
                   </p>
                 </a>
               </div>
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="d-flex">
+                <div className={`${styles["contact__icon"]}`}>
+                  <FontAwesomeIcon
+                    icon={faGlobe}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
+                <a href="https://www.kochapas.dev"
+                  className="mt-auto mb-auto text-decoration-none fs-5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="mt-auto mb-auto">
+                    {"https://www.kochapas.dev"}
+                  </p>
+                </a>
+              </div>
               <div className="d-flex mt-3">
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  size="2x"
-                  className="me-3"
-                />
+                <div className={`${styles["contact__icon"]}`}>
+                  <FontAwesomeIcon
+                    icon={faGithubSquare}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
                 <a href="https://www.github.com/kochapas"
                   className="mt-auto mb-auto text-decoration-none fs-5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <p className="mt-auto mb-auto">
-                    {"github.com/kochapas"}
+                    {"www.github.com/kochapas"}
+                  </p>
+                </a>
+              </div>
+              <div className="d-flex mt-3">
+                <div className={`${styles["contact__icon"]}`}>
+                  <FontAwesomeIcon
+                    icon={faHouseLaptop}
+                    size="2x"
+                    className="me-3"
+                  />
+                </div>
+                <a
+                  className="mt-auto mb-auto text-decoration-none fs-5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="mt-auto mb-auto">
+                    {"Hybrid / Remote"}
                   </p>
                 </a>
               </div>

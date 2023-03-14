@@ -5,3 +5,10 @@
   z-index: -1;
   padding: 1em;
 }
+
+.contact__icon {
+  width: 40px;
+  max-width: 40px;
+  margin-right: 1.5em;
+  height: auto;
+}
