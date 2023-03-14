@@ -6,15 +6,27 @@ import {
   Projects,
   Footer,
 } from "@/components"
+import ogImage from "../../public/ogImage.jpg";
 
 export default function Home() {
+  const title = "Kochapas: Fullstack Developer";
+  const description = "A web developer in Tokyo, with a love for ramen. 🍜";
+  const url = "https://www.kochapas.dev/";
+  console.log({ogImage});
   return (
     <>
       <Head>
-        <title>{"Kochapas: Fullstack Developer"}</title>
-        <meta name="description" content="A web developer in Tokyo, with a love for ramen. 🍜" />
+        <title>{title}</title>
+        <meta name="description" content={description}/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+
+        {/* Facebook Open Graph data */}
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:image" content={ogImage.src} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content={title} />
       </Head>
       <Header />
       <Contact />
