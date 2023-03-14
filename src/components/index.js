@@ -1,14 +1,13 @@
-export { Navbar } from "./Navbar"
-export { Header } from "./Header"
-export { Footer } from "./Footer"
-export { Contact } from "./Contact"
-export { CardContainer } from "./CardContainer"
-export { InformationCards } from "./InformationCards"
-export { HistoryCard } from "./HistoryCard"
-export { Badge } from "./Badge"
-export { BadgeContainer } from "./BadgeContainer"
-export { ExpandableSpace } from "./ExpandableSpace"
-export { Projects } from "./Projects"
-export { Button } from "./Button"
-export { FloatMenu } from "./FloatMenu"
-export { Skeleton } from "./Skeleton"
+export * from "./decorations";
+export { Badge } from "./Badge";
+export { BadgeContainer } from "./BadgeContainer";
+export { Button } from "./Button";
+export { CardContainer } from "./CardContainer";
+export { Contact } from "./Contact";
+export { FloatMenu } from "./FloatMenu";
+export { Footer } from "./Footer";
+export { Header } from "./Header";
+export { HistoryCard } from "./HistoryCard";
+export { InformationCards } from "./InformationCards";
+export { Navbar } from "./Navbar";
+export { Projects } from "./Projects";

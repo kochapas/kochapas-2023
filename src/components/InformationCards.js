@@ -4,7 +4,8 @@ import {
   CardContainer,
   HistoryCard,
   ExpandableSpace,
-  Skeleton
+  Skeleton,
+  RunningLine,
 } from "@/components"
 import { useWindowSize, useScrollLocation } from "@/hooks";
 import { useTranslation } from "react-i18next";
@@ -54,7 +55,10 @@ export const InformationCards = () => {
   }, [scrollLocation]);
 
   return (
-    <div className={`${windowSize.containerClass} mt-3`}>
+    <div className={`${windowSize.containerClass} overflow-hidden mt-3`}>
+      <div className="d-flex position-relative w-100 justify-content-center">
+        <RunningLine height="2000px" />
+      </div>
       <div className="row">
         {/* Left column */}
         <div className="col-12 col-lg-6">
