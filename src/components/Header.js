@@ -33,7 +33,7 @@ export const Header = () => {
             </div>
             <div className="col-12 col-lg-9 mt-2">
               <h1>{t("Header.name")}</h1>
-              <h2>{t("Header.title")}</h2>
+              <h2 className="text-muted">{t("Header.title")}</h2>
               <p className="mt-4 mb-2">{t("Header.description")}</p>
               <p>{t("Header.subDescription")}</p>
             </div>
