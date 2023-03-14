@@ -29,13 +29,13 @@
         }
       },
       "mapQuestAsia": {
-        "title": "GISソフトウェアエンジニア",
+        "title": "ソフトウェアエンジニア",
         "subtitle": "正社員",
         "placeName": "MapQuestAsia",
         "dateRange": "2015年06月 - 2020年06月",
         "location": "タイ・バンコク",
         "tasks": {
-          "1": "要件に基づき、Windows/Webアプリケーションの設計、コーディング、テスト、報告を行う。C#言語に特化している。"
+          "1": "要件に基づき、Windows/Web地理情報システム（GIS）アプリケーションを設計、コーディング、テスト、報告する。C#言語に特化し、VB.NET、HTML、CSS、Javascriptも通常業務で使用する。"
         }
       },
       "gmmGrammy": {

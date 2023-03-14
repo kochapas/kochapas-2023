@@ -29,13 +29,13 @@
         }
       },
       "mapQuestAsia": {
-        "title": "GIS Software Developer",
+        "title": "Software Developer",
         "subtitle": "Permanent",
         "placeName": "MapQuestAsia",
         "dateRange": "2015/06 - 2020/06",
         "location": "Bangkok, Thailand",
         "tasks": {
-          "1": "Design, code, test, and report windows/web applications based on requirements. Specialize in C# language."
+          "1": "Design, code, test, and report windows/web geographic information system (GIS) applications based on requirements. Specialize in C# language, also including VB.NET, HTML, CSS, and Javascript in regular tasks."
         }
       },
       "gmmGrammy": {
@@ -77,11 +77,11 @@
       "title": "Languages",
       "thai": {
         "title": "Thai",
-        "level": "Native / Billingual"
+        "level": "Native"
       },
       "english": {
         "title": "English",
-        "level": "Native / Billingual"
+        "level": "Bilingual"
       },
       "japanese": {
         "title": "Japanese",
