@@ -19,7 +19,7 @@ export const Contact = () => {
           <div className="row h-100 d-flex justify-content-between align-items-center">
             <div className="col-12 col-lg-6">
               <div className="d-flex">
-                <div className={`${styles["contact__icon"]} d-flex justify-content-center`}>
+                <div className={`${styles["contact__icon"]}`}>
                   <FontAwesomeIcon
                     icon={faSquareEnvelope}
                     size="2x"
@@ -62,7 +62,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className="col-12 col-lg-6">
-              <div className="d-flex">
+              <div className="d-flex mt-3 mt-lg-0">
                 <div className={`${styles["contact__icon"]}`}>
                   <FontAwesomeIcon
                     icon={faGlobe}
