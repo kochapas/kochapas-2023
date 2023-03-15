@@ -11,7 +11,7 @@ import ogImage from "../../public/ogImage.jpg";
 export default function Home() {
   const title = "Kochapas: Fullstack Developer";
   const description = "A web developer in Tokyo, with a love for ramen. 🍜";
-  const url = "https://www.kochapas.dev/";
+  const url = "https://www.kochapas.dev";
 
   return (
     <>
