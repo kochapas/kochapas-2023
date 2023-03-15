@@ -25,6 +25,11 @@
   overflow: hidden;
 }
 
+.badge__stack {
+  background-color: #2676b7;
+  font-family: "Source Code Pro", monospace;
+}
+
 @media (width < 992px){
   @keyframes show {
     0% { max-height: 0px; }

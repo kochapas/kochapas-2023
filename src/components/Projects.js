@@ -91,7 +91,7 @@ export const Projects = () => {
                     {stacks?.map((stack,index) =>
                       <p
                         key={`stack-${index}`}
-                        className="badge bg-info rounded-pill mb-0 me-2"
+                        className={`${styles["badge__stack"]} badge rounded-pill mb-0 me-2`}
                       >
                         {stack}
                       </p>
