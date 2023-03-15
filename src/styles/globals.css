@@ -22,6 +22,10 @@ a:hover {
   background-color: rgb(220, 200, 255);
 }
 
+#badge-container {
+  font-family: "Source Code Pro", monospace;
+}
+
 #badge-container:first-child {
   margin-left: 0;
 }
