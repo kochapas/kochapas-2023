@@ -24,7 +24,7 @@ export default function Home() {
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={ogImage.src} />
+        <meta property="og:image" content={`${url}${ogImage.src}`} />
         <meta property="og:description" content={description} />
         <meta property="og:site_name" content={title} />
       </Head>
