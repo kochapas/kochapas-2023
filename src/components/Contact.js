@@ -26,7 +26,7 @@ export const Contact = () => {
                     className="me-3"
                   />
                 </div>
-                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto text-decoration-none fs-5">
+                <a href="mailto:kochapas@outlook.com" className="mt-auto mb-auto text-decoration-none">
                   <p className="mt-auto mb-auto">
                     {"kochapas@outlook.com"}
                   </p>
@@ -40,7 +40,7 @@ export const Contact = () => {
                     className="me-3"
                   />
                 </div>
-                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto text-decoration-none fs-5">
+                <a href="https://www.linkedin.com/in/kochapas" target="_blank" className="mt-auto mb-auto text-decoration-none">
                   <p className="mt-auto mb-auto">
                     {"www.linkedin.com/in/kochapas"}
                   </p>
@@ -54,7 +54,7 @@ export const Contact = () => {
                     className="me-3"
                   />
                 </div>
-                <a href="tel:+818034446253" className="mt-auto mb-auto text-decoration-none fs-5">
+                <a href="tel:+818034446253" className="mt-auto mb-auto text-decoration-none">
                   <p className="mt-auto mb-auto">
                     {"+81 80 3444 6253"}
                   </p>
@@ -71,7 +71,7 @@ export const Contact = () => {
                   />
                 </div>
                 <a href="https://www.kochapas.dev"
-                  className="mt-auto mb-auto text-decoration-none fs-5"
+                  className="mt-auto mb-auto text-decoration-none"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -89,7 +89,7 @@ export const Contact = () => {
                   />
                 </div>
                 <a href="https://www.github.com/kochapas"
-                  className="mt-auto mb-auto text-decoration-none fs-5"
+                  className="mt-auto mb-auto text-decoration-none"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -107,7 +107,7 @@ export const Contact = () => {
                   />
                 </div>
                 <a
-                  className="mt-auto mb-auto text-decoration-none fs-5"
+                  className="mt-auto mb-auto text-decoration-none"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

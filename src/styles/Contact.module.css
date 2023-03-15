@@ -6,6 +6,10 @@
   padding: 1em;
 }
 
+.contact__background a {
+  font-size: 1.15rem;
+}
+
 .contact__icon {
   display: flex;
   justify-content: center;
