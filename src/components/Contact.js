@@ -76,7 +76,7 @@ export const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <p className="mt-auto mb-auto">
-                    {"https://www.kochapas.dev"}
+                    {"www.kochapas.dev"}
                   </p>
                 </a>
               </div>
