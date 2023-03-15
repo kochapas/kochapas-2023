@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 export const FloatMenu = ({ children }) => {
   const { t, i18n } = useTranslation();
-  const supportedLanguage = ["jp", "us"];
+  const supportedLanguage = ["jp", "th", "us"];
   const defaultLanguage = "us";
   const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
 
@@ -15,6 +15,7 @@ export const FloatMenu = ({ children }) => {
   const languagePair = {
     us: "en",
     jp: "ja",
+    th: "th",
   }
 
   const handleLanguageChange = (lang) => {
