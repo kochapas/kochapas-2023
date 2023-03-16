@@ -1,10 +1,13 @@
 import Image from "next/image";
-import { useState } from "react";
-import { Button } from "@/components";
-import { useWindowSize } from "@/hooks";
 import styles from "@/styles/Projects.module.css";
+import { useState } from "react";
+import { Button, ScrollingDown } from "@/components";
+import { useWindowSize } from "@/hooks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faAngleDown,
+} from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
@@ -17,10 +20,16 @@ export const Projects = () => {
 
   if (!expanded) {
     return (
-    <div className="w-100 text-center mt-3">
+    <div className="w-100 text-center mt-3 mb-5">
       <Button onClick={() => setExpanded(true)}>
         {t(`Project.cta`)}
       </Button>
+      <ScrollingDown height="8px">
+        <FontAwesomeIcon
+          icon={faAngleDown}
+          size="1x"
+        />
+      </ScrollingDown>
     </div>
   );
   }
@@ -63,7 +72,6 @@ export const Projects = () => {
                       <FontAwesomeIcon
                         icon={faArrowUpRightFromSquare}
                         size="1x"
-                        className=""
                       />
                     </a>
                     : <p className="fs-5 mb-0">{name}</p>
