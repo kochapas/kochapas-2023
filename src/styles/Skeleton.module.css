@@ -1,0 +1,10 @@
+@keyframes animate {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+.skeleton--text {
+  overflow: hidden;
+  animation: animate 2s infinite;
+}

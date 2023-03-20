@@ -1,0 +1,27 @@
+.running-line__horizontal--expand {
+  overflow: hidden;
+  max-width: 2000px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  transition: max-width 1s ease-in;
+}
+
+.running-line__horizontal--hide {
+  overflow: hidden;
+  max-width: 0px;
+  border: 0.5px solid white;
+  transition: max-width 1s ease-out;
+}
+
+.running-line__vertical--expand {
+  overflow: hidden;
+  max-height: 2000px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  transition: max-height 1s ease-in;
+}
+
+.running-line__vertical--hide {
+  overflow: hidden;
+  max-height: 0px;
+  border: 0.5px solid white;
+  transition: max-height 1s ease-out, border-color 2s ease-in;
+}

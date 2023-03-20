@@ -1,0 +1,20 @@
+.contact__background {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  z-index: -1;
+  padding: 1em;
+}
+
+.contact__background a {
+  font-size: 1.25rem;
+}
+
+.contact__icon {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  max-width: 50px;
+  margin-right: 1em;
+  height: auto;
+}

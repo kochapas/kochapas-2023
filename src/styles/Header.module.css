@@ -1,0 +1,8 @@
+.header__background {
+  width: 100%;
+  height:fit-content;
+  overflow: hidden;
+  z-index: -1;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 255)), url("../../public/assets/background.jpg");
+  background-size: cover;
+}

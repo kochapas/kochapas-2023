@@ -1,0 +1,158 @@
+{
+  "translation": {
+    "Header": {
+      "name": "Kochapas Santibut (Allen)",
+      "title": "Full-Stack Developer",
+      "description": "Experienced coder proficient in multiple programming languages since 2014.",
+      "subDescription": "Originally from Bangkok, Thailand. Seeking opportunities to utilize my skills and expertise to enhance quality of life and promote workplace efficiency.",
+      "location": "Tokyo, Japan"
+    },
+    "FloatMenu": {
+      "cv": {
+        "label": "Get my CV!"
+      }
+    },
+    "WorkExperience": {
+      "title": "Work Experience",
+      "goRide": {
+        "title": "Full-Stack Developer",
+        "subtitle": "Permanent",
+        "placeName": "GO RIDE, INC.",
+        "dateRange": "2021/09 - 2023/03",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
+          "2": "Designed and maintained databases using GraphQL and PostgresQL.",
+          "3": "Helped to train and onboard new employees.",
+          "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
+          "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
+        }
+      },
+      "mapQuestAsia": {
+        "title": "Software Developer",
+        "subtitle": "Permanent",
+        "placeName": "MapQuestAsia",
+        "dateRange": "2015/06 - 2020/06",
+        "location": "Bangkok, Thailand",
+        "tasks": {
+          "1": "Design, code, test, and report windows/web geographic information system (GIS) applications based on requirements. Specialize in C# language, also including VB.NET, HTML, CSS, and Javascript in regular tasks."
+        }
+      },
+      "gmmGrammy": {
+        "title": "iOS Developer",
+        "subtitle": "Internship",
+        "placeName": "GMM Grammy PLC",
+        "dateRange": "2014/06 - 2014/08",
+        "location": "Bangkok, Thailand"
+      }
+    },
+    "FreeLanceVolunteer": {
+      "title": "Freelance / Volunteer",
+      "mamoru": {
+        "title": "Frontend Developer",
+        "subtitle": "Volunteer",
+        "placeName": "Mamoru",
+        "dateRange": "2021/09 - Present",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Volunteered with the Mamoru team to develop a website that promotes global sustainability.",
+          "2": "Utilized React.js to build the frontend, provided code reviews, and mentorship to junior team members."
+        }
+      },
+      "leWagonTokyo": {
+        "title": "Coding Teaching Assistant",
+        "subtitle": "Freelance",
+        "placeName": "Le Wagon Tokyo",
+        "dateRange": "2022/07 - 2022/12",
+        "location": "Tokyo, Japan",
+        "tasks": {
+          "1": "Collaborated with a coding instructor in a coding bootcamp, providing guidance and mentorship to students on website development using Ruby on Rails."
+        }
+      }
+    },
+    "Skills": {
+      "title": "Skills"
+    },
+    "Languages": {
+      "title": "Languages",
+      "thai": {
+        "title": "Thai",
+        "level": "Native"
+      },
+      "english": {
+        "title": "English",
+        "level": "Bilingual"
+      },
+      "japanese": {
+        "title": "Japanese",
+        "level": "Conversational"
+      }
+    },
+    "Education": {
+      "title": "Education",
+      "leWagonTokyo": {
+        "title": "Web Development Bootcamp",
+        "placeName": "Le Wagon Tokyo",
+        "dateRange": "2021/07 - 2021/09",
+        "location": "Tokyo, Japan"
+      },
+      "tni": {
+        "title": "Information Technology",
+        "subtitle": "Bachelor's",
+        "placeName": "Thai-Nichi Institute of Technology",
+        "dateRange": "2011/07 - 2015/06",
+        "location": "Bangkok, Thailand"
+      }
+    },
+    "Interests": {
+      "title": "Interests",
+      "content": "Cooking, Puzzle, Hiking, Physical Fitness, Photography, Travelling, Video Games, DIY Projects"
+    },
+    "Project": {
+      "title": "Projects",
+      "cta": "Discover my projects",
+      "goSub": {
+        "name": "Go SubscRide",
+        "primaryType": "Shopify Application",
+        "secondaryType": "Production",
+        "description": "An application that operates on the Shopify platform and is designed to assist merchants in managing their customers' subscription contracts. While I was employed at GO RIDE, I was closely involved in implementing new features and maintaining the application.",
+        "roles": "Fullstack Developer,Team Member",
+        "stacks": "Node,React,GraphQL,PostgresQL",
+        "imgSrc": "/assets/projects/gosub.jpg",
+        "url": "https://apps.shopify.com/go-subscride"
+      },
+      "stripe": {
+        "name": "Stripe Migration Application",
+        "primaryType": "Shopify Application",
+        "secondaryType": "Production",
+        "description": "An application designed to assist merchants in migrating their customers' payment information from the Stripe platform to the Shopify platform. I developed a customized application to assist my team members in avoiding repetitive tasks during the store migration process.",
+        "roles": "Fullstack Developer,Solo Member",
+        "stacks": "Node,React,GraphQL",
+        "imgSrc": "/assets/projects/stripe.jpg"
+      },
+      "mamoru": {
+        "name": "mamoru.earth",
+        "primaryType": "Web Application",
+        "secondaryType": "Production",
+        "description": "An application that promotes sustainability and fosters a connection between a business and its target consumers. I choose to work with them voluntarily in order to contribute to creating a better world for future generations.",
+        "roles": "Frontend Developer,Team Member",
+        "stacks": "React",
+        "imgSrc": "/assets/projects/mamoru.jpg",
+        "url": "https://app.mamoru.earth"
+      },
+      "barcSnap": {
+        "name": "BarcSnap",
+        "primaryType": "Web Application",
+        "secondaryType": "Side Project / Discontinued",
+        "description": "An application that I developed alongside my teammates during our coding bootcamp. The primary objective of this application is to assist foreigners who are traveling or residing in a foreign country where they cannot read the local language. BarcSnap enables them to scan the barcode of a product and receive detailed information about it, even if they cannot read the product's name.",
+        "roles": "Fullstack Developer,Team Leader",
+        "stacks": "Ruby on Rails,PostgresQL",
+        "imgSrc": "/assets/projects/barcsnap.jpg",
+        "url": "https://github.com/2tonepantone/barcsnap"
+      }
+    },
+    "Footer": {
+      "content": "Made with React"
+    }
+  }
+}
