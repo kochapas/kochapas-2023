@@ -10,6 +10,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
+/**
+ * The component renders at the bottom of the page before the footer to show projects information.
+ * @returns Projects component.
+ */
 export const Projects = () => {
   const { t } = useTranslation();
   const windowSize = useWindowSize();

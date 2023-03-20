@@ -1,7 +1,16 @@
 import { useState, useEffect } from "react";
 
+type ScrollLocation = {
+  x: number | undefined;
+  y: number | undefined;
+}
+
+/**
+ * Use this hook to track the scroll location of window.
+ * @returns x / y.
+ */
 export const useScrollLocation = () => {
-  const [scrollLocation, setScrollLocation] = useState({
+  const [scrollLocation, setScrollLocation] = useState<ScrollLocation>({
     x: undefined,
     y: undefined,
   });

@@ -5,6 +5,11 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { useTranslation } from "react-i18next";
 
+/**
+ * Component that renders at the top of the page.
+ * Also known as the Header.
+ * @returns Header component.
+ */
 export const Header = () => {
   const windowSize = useWindowSize();
   const { t } = useTranslation();

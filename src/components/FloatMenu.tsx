@@ -1,24 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, PropsWithChildren } from "react";
 import styles from "@/styles/FloatMenu.module.css";
 import { CircleFlag } from 'react-circle-flags'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
-export const FloatMenu = ({ children }) => {
+/**
+ * Component for the float menu that floats on the bottom right of the screen.
+ * @param children Children elements to render inside the main component.
+ * @returns FloatMenu component.
+ */
+export const FloatMenu = ({ children }: PropsWithChildren) => {
   const { t, i18n } = useTranslation();
   const supportedLanguage = ["jp", "th", "us"];
   const defaultLanguage = "us";
   const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
 
   // Convert country code to language code.
-  const languagePair = {
+  const languagePair: { [index: string]: string } = {
     us: "en",
     jp: "ja",
     th: "th",
   }
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang);
     i18n.changeLanguage(languagePair[lang]);
   }
