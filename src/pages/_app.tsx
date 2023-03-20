@@ -1,3 +1,5 @@
+import type { AppProps, } from 'next/app'
+import { PropsWithChildren } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/globals.css";
@@ -11,7 +13,7 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-const MyProviders = ({ children }) => {
+const MyProviders = ({ children }: PropsWithChildren) => {
   return (
     <>
       <GoogleAnalytics trackPageViews />
@@ -24,7 +26,7 @@ const MyProviders = ({ children }) => {
   )
 }
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <MyProviders>

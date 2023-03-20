@@ -30,7 +30,9 @@ export const InformationCards = () => {
     setSkillsLoading(true);
     await fetch("/api/skills").then(async (res) => {
       await res.json().then((data) => {
-        setSkills(data.skills);
+        if (data?.error) throw new Error(data?.error);
+        console.log({data});
+        setSkills(data?.data);
         setSkillsLoading(false);
       }).catch((error) => {
         console.error({ error });
