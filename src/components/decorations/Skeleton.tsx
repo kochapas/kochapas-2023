@@ -1,6 +1,18 @@
 import styles from "@/styles/Skeleton.module.css";
 
-export const Skeleton = ({width, height}) => {
+type Props = {
+  width?: string | number;
+  height?: string | number;
+}
+
+/**
+ * A component use when something is loading.
+ *
+ * @param width Width of the component.
+ * @param height Height of the component.
+ * @returns Skeleton component.
+ */
+export const Skeleton = ({width, height}: Props) => {
   return (
     <div
       style={{ width: width || "auto", height: height || "auto" }}
