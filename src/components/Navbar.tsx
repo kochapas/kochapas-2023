@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, PropsWithChildren } from "react";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +6,13 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
 import { useScrollLocation } from "@/hooks/useScrollLocation";
 
-export const Navbar = ({children}) => {
+/**
+ * Component that float at the top of the page and follows user everywhere.
+ * Also known as the navigation bar.
+ * @param children Children elements to render inside the main component.
+ * @returns Navbar component.
+ */
+export const Navbar = ({ children }: PropsWithChildren) => {
   const scrollLocation = useScrollLocation();
   // Set navbar class to be "d-none" by default to prevent the animation from being played when the page is loaded.
   const [navbarClass, setNavbarClass] = useState("d-none");
@@ -28,7 +34,7 @@ export const Navbar = ({children}) => {
           <div
             className={styles.navbar__avatar}
             onClick={() => {
-              window.location = "#"
+              window.location.href = "#";
             }}
           >
             <Image
