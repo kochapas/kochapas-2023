@@ -1,8 +1,18 @@
 import { useState, useEffect } from "react";
 
+type WindowSize = {
+  width: string | number | undefined;
+  height: string | number | undefined;
+  containerClass: string;
+}
+
+/**
+ * Use this hook to track the size of window.
+ * @returns width / height / containerClass.
+ */
 export const useWindowSize = () => {
   // Initialize state with undefined width/height so server and client renders match.
-  const [windowSize, setWindowSize] = useState({
+  const [windowSize, setWindowSize] = useState<WindowSize>({
     width: undefined,
     height: undefined,
     containerClass: "container-fluid w-75",
