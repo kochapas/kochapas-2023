@@ -1,4 +1,23 @@
-export const HistoryCard = ({title, subtitle, placeName, dateRange, location, tasks}) => {
+type Props = {
+  title: string;
+  subtitle: string;
+  placeName: string;
+  dateRange: string;
+  location: string;
+  tasks: string[];
+}
+
+/**
+ * Multipurpose component to show basic chronological information about work and education.
+ * @param title The title. Most noticeable.
+ * @param subtitle Subtitle, render next to the title.
+ * @param placeName Right under the title.
+ * @param dateRange Next row under the placeName.
+ * @param location Same row as dateRange.
+ * @param tasks An array of string for the bullet point information.
+ * @returns HistoryCard component.
+ */
+export const HistoryCard = ({ title, subtitle, placeName, dateRange, location, tasks }: Props) => {
   return (
     <div className="mb-3">
       <div className="d-flex justify-content-between align-items-center">
