@@ -1,18 +1,24 @@
 import { useScrollLocation, useWindowSize } from "@/hooks";
 import styles from "@/styles/RunningLine.module.css";
+
+type Props = {
+  width: string | number,
+  height: string | number,
+}
+
 /**
  * This function only use either width or height.
  * RunningLine is a component that will moves once user starts scrolling the page.
  *
  * @param width If the width present, the running line will be vertical line.
  * @param height If the height present, the running line will be horizontal line.
- * @param trigger (Experimental) Choose how running line interacts with user.
+ * @returns RunningLine component. Empty component if windowSize hook doesn't work.
  */
-export const RunningLine = ({ width, height }) => {
+export const RunningLine = ({ width, height }: Props) => {
   const scrollLocation = useScrollLocation();
   const windowSize = useWindowSize();
   // DO not render this component if the user is on small screen.
-  if (windowSize?.width < 992) {
+  if (windowSize?.width === undefined || windowSize?.width < 992) {
     return (
       <></>
     );
@@ -30,7 +36,7 @@ export const RunningLine = ({ width, height }) => {
         height: !isHorizontalLine ? height : 0,
         zIndex: -1,
       }}
-      className={`position-absolute ${scrollLocation?.y > 20 ? classExpand : classHide}`}
+      className={`position-absolute ${scrollLocation?.y !== undefined && scrollLocation?.y > 20 ? classExpand : classHide}`}
     />
   );;
 };
