@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
 
+/**
+ * Component that renders at the bottom of the bottom of the page.
+ * Also known as the Footer.
+ * @returns Footer component.
+ */
 export const Footer = () => {
   const { t } = useTranslation();
 
