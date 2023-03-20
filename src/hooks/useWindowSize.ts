@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 type WindowSize = {
-  width: string | number | undefined;
-  height: string | number | undefined;
+  width: number | undefined;
+  height: number | undefined;
   containerClass: string;
 }
 
