@@ -8,6 +8,6 @@ export default function handler(req, res) {
   }
 
   // Assuming that this information was read from the DB.
-  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "TypeScript", "Ruby on Rails", "C#", "VB.NET", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Heroku", "Shopify", "Git", "GitHub", "GitHub Projects", "Trello", "Figmas"];
+  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "TypeScript", "C#", "VB.NET", "Ruby on Rails", "GraphQL", "PostgreSQL", "SQL Server", "Bootstrap", "Shopify", "Heroku", "Figmas", "Trello", "Git", "GitHub", "GitHub Projects"];
   res.status(200).json({ skills });
 }
