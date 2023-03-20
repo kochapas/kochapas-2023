@@ -10,8 +10,12 @@ import {
 import { useWindowSize, useScrollLocation } from "@/hooks";
 import { useTranslation } from "react-i18next";
 
+/**
+ * Component use to contain all the cards in the middle of the app.
+ * Such as work experiences, skills, educations, etc.
+ * @returns InformationCards component.
+ */
 export const InformationCards = () => {
-  // TODO: Add futuristic stripe when the page is scroll.
   const { t } = useTranslation();
   const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
   const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
@@ -49,7 +53,7 @@ export const InformationCards = () => {
   }, [skills])
 
   useEffect(() => {
-    if (scrollLocation?.y > 20) {
+    if (scrollLocation?.y !== undefined && scrollLocation?.y > 20) {
       setSpaceExpanded(true);
     } else {
       setSpaceExpanded(false);
