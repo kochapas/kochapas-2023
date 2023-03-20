@@ -9,9 +9,10 @@ type Props = {
 
 /**
  * Component to play the looping animation of children component moving down.
+ *
  * @param height Total height of the component.
  * @param className Class name for the root level of the component.
- * @param children Children components.
+ * @param children Children elements to render inside the main component.
  * @returns ScrollingDown component.
  */
 export const ScrollingDown = ({ height, className, children }: Props) => {

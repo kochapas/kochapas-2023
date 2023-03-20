@@ -3,8 +3,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
-  data?: string[],
-  error?: string,
+  data?: string[];
+  error?: string;
 }
 
 // Create simple API to demonstrate how to call API from frontend.

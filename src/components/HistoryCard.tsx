@@ -1,10 +1,10 @@
 type Props = {
-  title: string;
-  subtitle: string;
-  placeName: string;
-  dateRange: string;
-  location: string;
-  tasks: string[];
+  title: string | undefined | null;
+  subtitle?: string | undefined | null;
+  placeName?: string | undefined | null;
+  dateRange?: string | undefined | null;
+  location?: string | undefined | null;
+  tasks?: string[] | undefined;
 }
 
 /**

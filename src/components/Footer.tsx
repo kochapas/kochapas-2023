@@ -4,7 +4,7 @@ import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
 
 /**
- * Component that renders at the bottom of the bottom of the page.
+ * Component that renders at the bottom of the page.
  * Also known as the Footer.
  * @returns Footer component.
  */

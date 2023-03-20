@@ -2,8 +2,8 @@ import { useScrollLocation, useWindowSize } from "@/hooks";
 import styles from "@/styles/RunningLine.module.css";
 
 type Props = {
-  width: string | number,
-  height: string | number,
+  width?: string | number;
+  height?: string | number;
 }
 
 /**
