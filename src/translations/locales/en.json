@@ -22,7 +22,7 @@
         "location": "Tokyo, Japan",
         "tasks": {
           "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
-          "2": "Designed and maintained databases using GraphQL and PostgresQL.",
+          "2": "Designed and maintained databases using GraphQL and PostgreSQL.",
           "3": "Helped to train and onboard new employees.",
           "4": "Conducted code reviews and provided feedback to other team members to ensure code quality and consistency.",
           "5": "Conduct analysis and offer insights on the company's applications to enhance efficiency, as well as strategize the timeline for implementing improvements."
@@ -117,7 +117,7 @@
         "secondaryType": "Production",
         "description": "An application that operates on the Shopify platform and is designed to assist merchants in managing their customers' subscription contracts. While I was employed at GO RIDE, I was closely involved in implementing new features and maintaining the application.",
         "roles": "Fullstack Developer,Team Member",
-        "stacks": "Node,React,GraphQL,PostgresQL",
+        "stacks": "Node,React,GraphQL,PostgreSQL",
         "imgSrc": "/assets/projects/gosub.jpg",
         "url": "https://apps.shopify.com/go-subscride"
       },
@@ -146,7 +146,7 @@
         "secondaryType": "Side Project / Discontinued",
         "description": "An application that I developed alongside my teammates during our coding bootcamp. The primary objective of this application is to assist foreigners who are traveling or residing in a foreign country where they cannot read the local language. BarcSnap enables them to scan the barcode of a product and receive detailed information about it, even if they cannot read the product's name.",
         "roles": "Fullstack Developer,Team Leader",
-        "stacks": "Ruby on Rails,PostgresQL",
+        "stacks": "Ruby on Rails,PostgreSQL",
         "imgSrc": "/assets/projects/barcsnap.jpg",
         "url": "https://github.com/2tonepantone/barcsnap"
       }

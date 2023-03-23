@@ -117,7 +117,7 @@
         "secondaryType": "プロダクション",
         "description": "Shopifyプラットフォーム上で動作するアプリケーションで、加盟店が顧客のサブスクリプション契約を管理することを支援するために設計されています。GO RIDEに在籍中は、新機能の実装やアプリケーションのメンテナンスに深く関わりました。",
         "roles": "フルスタックエンジニア,チームメンバー",
-        "stacks": "Node,React,GraphQL,PostgresQL",
+        "stacks": "Node,React,GraphQL,PostgreSQL",
         "imgSrc": "/assets/projects/gosub.jpg",
         "url": "https://apps.shopify.com/go-subscride"
       },
@@ -146,7 +146,7 @@
         "secondaryType": "サイドプロジェクト / 生産終了",
         "description": "コーディング・ブートキャンプでチームメイトと一緒に開発したアプリケーションです。このアプリケーションの主な目的は、現地の言語が読めない外国に旅行または居住する外国人を支援することです。BarcSnapは、商品名が読めなくても、商品のバーコードをスキャンすることで、その商品の詳細情報を得ることができます。",
         "roles": "フルスタックエンジニア,チームリーダー",
-        "stacks": "Ruby on Rails,PostgresQL",
+        "stacks": "Ruby on Rails,PostgreSQL",
         "imgSrc": "/assets/projects/barcsnap.jpg",
         "url": "https://github.com/2tonepantone/barcsnap"
       }
