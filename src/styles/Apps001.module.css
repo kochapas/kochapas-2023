@@ -1,0 +1,9 @@
+.header__background {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  z-index: -1;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../../public/assets/apps_001_001.png");
+  background-size: cover;
+  background-position: center;
+}
