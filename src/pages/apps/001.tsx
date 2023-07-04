@@ -24,11 +24,10 @@ export default function ZeroZeroOne() {
     const fuelCostFloat = parseFloat(fuelCost);
     if (!!totalKmFloat && !!consumptionRateFloat && !!fuelCostFloat) {
       // Calculate something.
-      console.log({
-        totalKmFloat,
-        consumptionRateFloat,
-        fuelCostFloat
-      })
+      // Drive safe, Dad.
+      const totalLiter = totalKmFloat / consumptionRateFloat;
+      const totalFuelCost = totalLiter * fuelCostFloat;
+      setResult(`${totalFuelCost}`);
     } else {
       setResult("-");
     }
