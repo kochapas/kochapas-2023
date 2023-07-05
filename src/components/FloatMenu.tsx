@@ -4,6 +4,7 @@ import { CircleFlag } from 'react-circle-flags'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { useRouter } from 'next/router';
 
 /**
  * Component for the float menu that floats on the bottom right of the screen.
@@ -11,6 +12,7 @@ import { useTranslation } from "react-i18next";
  * @returns FloatMenu component.
  */
 export const FloatMenu = ({ children }: PropsWithChildren) => {
+  const router = useRouter();
   const { t, i18n } = useTranslation();
   const supportedLanguage = ["jp", "th", "us"];
   const defaultLanguage = "us";
@@ -26,6 +28,15 @@ export const FloatMenu = ({ children }: PropsWithChildren) => {
   const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang);
     i18n.changeLanguage(languagePair[lang]);
+  }
+
+  if (router.asPath.startsWith("/apps/")) {
+    // Don't render the float menu if it is the custom apps page.
+    return (
+      <>
+        {children}
+      </>
+    )
   }
 
   return (

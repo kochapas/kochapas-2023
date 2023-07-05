@@ -1,11 +1,12 @@
 import { useState, ChangeEvent } from "react";
-import styles from "@/styles/Apps001.module.css";
+import styles from "@/styles/GrabCarTools.module.css";
 import { useWindowSize } from "@/hooks";
 import { CardContainer } from "@/components";
 
 // Just some experimental code for side project. Don't mind the app name.
-export default function ZeroZeroOne() {
+export const GrabCarTools = () => {
   const [result, setResult] = useState("-");
+  const [costPerKm, setCostPerKm] = useState("-");
   const [totalKm, setTotalKm] = useState("");
   const [consumptionRate, setConsumptionRate] = useState("");
   const [fuelCost, setFuelCost] = useState("");
@@ -27,9 +28,12 @@ export default function ZeroZeroOne() {
       // Drive safe, Dad.
       const totalLiter = totalKmFloat / consumptionRateFloat;
       const totalFuelCost = totalLiter * fuelCostFloat;
-      setResult(`${totalFuelCost}`);
+      const totalCostPerKm = totalFuelCost / totalKmFloat;
+      setResult(`${totalFuelCost.toFixed(2)}`);
+      setCostPerKm(`${totalCostPerKm.toFixed(2)}`)
     } else {
       setResult("-");
+      setCostPerKm("-")
     }
   }
 
@@ -100,7 +104,10 @@ export default function ZeroZeroOne() {
             />
             <span className="input-group-text">บาท</span>
           </div>
-          <p className="fs-2">ค่าน้ำมันสุทธิ {result} บาท</p>
+          <div className="d-block">
+            <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท</p>
+            <p className="fs-4">{costPerKm} บาท / 1 กิโลเมตร</p>
+          </div>
         </CardContainer>
       </div>
     </>
