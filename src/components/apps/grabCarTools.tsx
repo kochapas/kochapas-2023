@@ -4,7 +4,7 @@ import { useWindowSize } from "@/hooks";
 import { CardContainer } from "@/components";
 
 // Just some experimental code for side project. Don't mind the app name.
-export default function ZeroZeroOne() {
+export const GrabCarTools = () => {
   const [result, setResult] = useState("-");
   const [totalKm, setTotalKm] = useState("");
   const [consumptionRate, setConsumptionRate] = useState("");
