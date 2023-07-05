@@ -105,7 +105,7 @@ export const GrabCarTools = () => {
             <span className="input-group-text">บาท</span>
           </div>
           <div className="d-block">
-            <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท / {totalKm || "-"} กิโลเมตร </p>
+            <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท</p>
             <p className="fs-4">{costPerKm} บาท / 1 กิโลเมตร</p>
           </div>
         </CardContainer>

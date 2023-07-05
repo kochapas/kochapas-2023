@@ -18,7 +18,7 @@ export default function AppsRouter() {
   const key = (id as string || "000") as keyof typeof APPS_ROUTER;
   const TheApp = APPS_ROUTER[key];
   if (!TheApp) {
-    return <ErrorPage statusCode={404}/>;
+    return <ErrorPage statusCode={404} />;
   }
 
   return (
