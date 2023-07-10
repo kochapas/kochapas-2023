@@ -1,4 +1,5 @@
 export * from "./decorations";
+export * from "./apps";
 export { Badge } from "./Badge";
 export { BadgeContainer } from "./BadgeContainer";
 export { Button } from "./Button";

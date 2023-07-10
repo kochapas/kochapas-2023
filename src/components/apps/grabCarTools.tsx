@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from "react";
 import styles from "@/styles/GrabCarTools.module.css";
 import { useWindowSize } from "@/hooks";
-import { CardContainer } from "@/components";
+import { CardContainer, BangchakOilIframe } from "@/components";
 
 // Just some experimental code for side project. Don't mind the app name.
 export const GrabCarTools = () => {
@@ -106,10 +106,11 @@ export const GrabCarTools = () => {
           </div>
           <div className="d-block">
             <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท</p>
-            <p className="fs-4">{costPerKm} บาท / 1 กิโลเมตร</p>
+            <p className="fs-4 mb-0">{costPerKm} บาท / 1 กิโลเมตร</p>
           </div>
         </CardContainer>
       </div>
+      <BangchakOilIframe />
     </>
   );
 }

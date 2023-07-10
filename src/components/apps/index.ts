@@ -1,5 +1,7 @@
-import { GrabCarTools } from "./grabCarTools";
+import { GrabCarTools } from "./GrabCarTools";
+import { BangchakOilIframe } from "./components";
 
 export {
   GrabCarTools,
+  BangchakOilIframe,
 }
