@@ -72,50 +72,51 @@ export const GrabCarTools = () => {
         className={`${styles.header__background} mb-2`}
         style={{ height: "300px" }}
       />
-      <div className="col">
-        <div className="">
-
+      <div className={`${windowSize.containerClass}`}>
+        <div className="row">
+          <div className="col-12 col-lg-7">
+            <CardContainer title={"คำนวณค่าน้ำมัน"}>
+              <div className="input-group mt-3 mb-3">
+                <span className="input-group-text">ใช้รถไป</span>
+                <input
+                  type="number"
+                  className="form-control"
+                  value={totalKm}
+                  onChange={handleTotalKmChange}
+                />
+                <span className="input-group-text">กิโลเมตร</span>
+              </div>
+              <div className="input-group mb-3">
+                <span className="input-group-text">อัตราสิ้นเปลือง</span>
+                <input
+                  type="number"
+                  className="form-control"
+                  value={consumptionRate}
+                  onChange={handleConsumptionRateChange}
+                />
+                <span className="input-group-text">กิโลเมตร/ลิตร</span>
+              </div>
+              <div className="input-group mb-3">
+                <span className="input-group-text">น้ำมันลิตรละ</span>
+                <input
+                  type="number"
+                  className="form-control"
+                  value={fuelCost}
+                  onChange={handlefuelCostChange}
+                />
+                <span className="input-group-text">บาท</span>
+              </div>
+              <div className="d-block">
+                <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท</p>
+                <p className="fs-4 mb-0">{costPerKm} บาท / 1 กิโลเมตร</p>
+              </div>
+            </CardContainer>
+          </div>
+          <div className="col-12 col-lg-5">
+            <BangchakOilIframe />
+          </div>
         </div>
       </div>
-      <div className={`${windowSize.containerClass}`}>
-        <CardContainer title={"คำนวณค่าน้ำมัน"}>
-          <div className="input-group mt-3 mb-3">
-            <span className="input-group-text">ใช้รถไป</span>
-            <input
-              type="number"
-              className="form-control"
-              value={totalKm}
-              onChange={handleTotalKmChange}
-            />
-            <span className="input-group-text">กิโลเมตร</span>
-          </div>
-          <div className="input-group mb-3">
-            <span className="input-group-text">อัตราสิ้นเปลือง</span>
-            <input
-              type="number"
-              className="form-control"
-              value={consumptionRate}
-              onChange={handleConsumptionRateChange}
-            />
-            <span className="input-group-text">กิโลเมตร/ลิตร</span>
-          </div>
-          <div className="input-group mb-3">
-            <span className="input-group-text">น้ำมันลิตรละ</span>
-            <input
-              type="number"
-              className="form-control"
-              value={fuelCost}
-              onChange={handlefuelCostChange}
-            />
-            <span className="input-group-text">บาท</span>
-          </div>
-          <div className="d-block">
-            <p className="fs-2 mb-0">ค่าน้ำมันสุทธิ {result} บาท</p>
-            <p className="fs-4 mb-0">{costPerKm} บาท / 1 กิโลเมตร</p>
-          </div>
-        </CardContainer>
-      </div>
-      <BangchakOilIframe />
     </>
   );
 }
