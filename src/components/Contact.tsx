@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faSquareEnvelope,
-  faSquarePhone,
-  faHouseLaptop,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 import { useWindowSize } from "@/hooks/useWindowSize";
@@ -49,20 +47,6 @@ export const Contact = () => {
                   </p>
                 </a>
               </div>
-              <div className="d-flex mt-3">
-                <div className={`${styles["contact__icon"]}`}>
-                  <FontAwesomeIcon
-                    icon={faSquarePhone}
-                    size="2x"
-                    className="me-3"
-                  />
-                </div>
-                <a href="tel:+818034446253" className="mt-auto mb-auto text-decoration-none">
-                  <p className="mt-auto mb-auto">
-                    {"+81 80 3444 6253"}
-                  </p>
-                </a>
-              </div>
             </div>
             <div className="col-12 col-lg-6">
               <div className="d-flex mt-3 mt-lg-0">
@@ -98,24 +82,6 @@ export const Contact = () => {
                 >
                   <p className="mt-auto mb-auto">
                     {"www.github.com/kochapas"}
-                  </p>
-                </a>
-              </div>
-              <div className="d-flex mt-3">
-                <div className={`${styles["contact__icon"]}`}>
-                  <FontAwesomeIcon
-                    icon={faHouseLaptop}
-                    size="2x"
-                    className="me-3"
-                  />
-                </div>
-                <a
-                  className="mt-auto mb-auto text-decoration-none"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="mt-auto mb-auto">
-                    {"Hybrid / Remote"}
                   </p>
                 </a>
               </div>

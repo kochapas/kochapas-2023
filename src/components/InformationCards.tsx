@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
  */
 export const InformationCards = () => {
   const { t } = useTranslation();
-  const workExperiences = ["goRide", "mapQuestAsia", "gmmGrammy"];
+  const workExperiences = ["whiteRabbit", "goRide", "mapQuestAsia", "gmmGrammy"];
   const otherWorkExperiences = ["mamoru", "leWagonTokyo"];
   const languages = ["thai", "english", "japanese"];
   const educations = ["leWagonTokyo", "tni"];

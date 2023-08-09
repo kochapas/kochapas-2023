@@ -53,13 +53,6 @@ export const Navbar = ({ children }: PropsWithChildren) => {
                 className="me-2"
               />
             </a>
-            <a href="tel:+818034446253">
-              <FontAwesomeIcon
-                icon={faSquarePhone}
-                size="2x"
-                className="me-2"
-              />
-            </a>
             <a
               href="https://www.linkedin.com/in/kochapas"
               target="_blank"

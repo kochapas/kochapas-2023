@@ -14,12 +14,19 @@
     },
     "WorkExperience": {
       "title": "ประวัติการทำงาน",
+      "whiteRabbit": {
+        "title": "นักพัฒนาเว็บ Full-Stack",
+        "subtitle": "พนักงานประจำ",
+        "placeName": "White Rabbit Japan",
+        "dateRange": "2023/04 - ปัจจุบัน",
+        "location": "โยโกฮาม่า, ญี่ปุ่น"
+      },
       "goRide": {
         "title": "นักพัฒนาเว็บ Full-Stack",
         "subtitle": "พนักงานประจำ",
         "placeName": "GO RIDE, INC.",
         "dateRange": "2021/09 - 2023/03",
-        "location": "โตเกียว, ญี่ปุ่น",
+        "location": "โยโกฮาม่า, ญี่ปุ่น",
         "tasks": {
           "1": "พัฒนา Web Application บนแพลทฟอร์มของ Shopify โดยใช้ Node.js สำหรับ Backend และ React.js สำหรับส่วน Frontend",
           "2": "ติดตั้ง, พัฒนา, และดูแลฐานข้อมูลด้วย GraphQL และ PostgreSQL",
