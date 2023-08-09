@@ -14,12 +14,19 @@
     },
     "WorkExperience": {
       "title": "Work Experience",
+      "whiteRabbit": {
+        "title": "Full-Stack Developer",
+        "subtitle": "Permanent",
+        "placeName": "White Rabbit Japan",
+        "dateRange": "2023/04 - Present",
+        "location": "Yokohama, Japan"
+      },
       "goRide": {
         "title": "Full-Stack Developer",
         "subtitle": "Permanent",
         "placeName": "GO RIDE, INC.",
         "dateRange": "2021/09 - 2023/03",
-        "location": "Tokyo, Japan",
+        "location": "Yokohama, Japan",
         "tasks": {
           "1": "Developed web applications on the Shopify platform utilizing Node.js for the backend and React.js for the frontend.",
           "2": "Designed and maintained databases using GraphQL and PostgreSQL.",

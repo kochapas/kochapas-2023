@@ -14,12 +14,19 @@
     },
     "WorkExperience": {
       "title": "職歴",
+      "whiteRabbit": {
+        "title": "フルスタックエンジニア",
+        "subtitle": "正社員",
+        "placeName": "White Rabbit Japan 合同会社",
+        "dateRange": "2023/04 - 現在",
+        "location": "日本・横浜"
+      },
       "goRide": {
         "title": "フルスタックエンジニア",
         "subtitle": "正社員",
         "placeName": "株式会社 GO RIDE",
         "dateRange": "2021年09月 - 2023年03月",
-        "location": "日本・東京都",
+        "location": "日本・横浜",
         "tasks": {
           "1": "バックエンドにNode.js、フロントエンドにReact.jsを利用したShopifyプラットフォーム上のWebアプリケーションを開発した。",
           "2": "GraphQLとPostgresQLを利用したデータベースの設計と保守",
