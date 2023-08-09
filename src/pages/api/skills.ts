@@ -19,6 +19,6 @@ export default function handler(
   }
 
   // Assuming that this information was read from the DB.
-  const skills = ["Node", "React", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "TypeScript", "C#", "VB.NET", "Ruby on Rails", "SQL", "GraphQL", "PostgreSQL", "Bootstrap", "Agile", "Git", "GitHub", "GitHub Projects", "Shopify", "Heroku", "Figmas", "Trello"];
+  const skills = ["Node", "React", "Vue", "JavaScript", "HTML", "CSS", "Express.js", "Next.js", "TypeScript", "C#", "VB.NET", "Ruby on Rails", "SQL", "GraphQL", "PostgreSQL", "Google Cloud Platform (GCP)", "Bootstrap", "Agile", "Git", "GitHub", "Shopify", "Heroku", "Hasura", "Figmas", "Trello", "Mentoring", "Project Management"];
   res.status(200).json({ data: skills });
 }
