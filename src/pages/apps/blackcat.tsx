@@ -6,8 +6,8 @@ import { CardContainer } from "@/components";
 import ogImage from "../../../public/assets/blackcat/banner.jpg";
 
 export default function BlackCat() {
-  const title = "แมวดำนำเข้า: โปรแกรมช่วยคำนวณค่ากดสินค้า";
-  const description = "รับกดสินค้านำเข้าจากญี่ปุ่น ได้ของครบ จบในที่เดียว เรตเริ่มต้น 0.32 ปิดรอบทุกเดือน";
+  const title = "แมวดำนำเข้า: โปรแกรมช่วยคำนวณราคาสินค้า";
+  const description = "บริการสั่งซื้อและนำเข้าสินค้าจากญี่ปุ่น ได้ของครบ จบในที่เดียว เรตเริ่มต้น 0.32 ปิดรอบทุกเดือน";
 
   const [result, setResult] = useState("-");
   const [productPrice, setProductPrice] = useState("");
@@ -104,7 +104,7 @@ export default function BlackCat() {
         <div className="row">
           <div className="col-12">
             <CardContainer title={"คำนวณค่าสินค้า (โดยประมาณ)"}>
-              <div className="input-group mt-3 mb-3">
+              <div className="mt-3 mb-3 input-group">
                 <span className="input-group-text">ค่าสินค้า</span>
                 <input
                   type="number"
@@ -114,7 +114,7 @@ export default function BlackCat() {
                 />
                 <span className="input-group-text">เยน</span>
               </div>
-              <div className="input-group mb-1">
+              <div className="mb-1 input-group">
                 <span className="input-group-text">ค่าส่ง (ในประเทศญี่ปุ่น)</span>
                 <input
                   type="number"
@@ -124,8 +124,8 @@ export default function BlackCat() {
                 />
                 <span className="input-group-text">เยน</span>
               </div>
-              <p className="text-secondary mb-3">∗ ค่าส่งและยอดส่งฟรีขึ้นอยู่กับแต่ละร้าน หากไม่แน่ใจแนะนำให้ใส่ไว้ที่ 660 เยนโดยประมาณ</p>
-              <div className="input-group mb-1">
+              <p className="mb-3 text-secondary">∗ ค่าส่งและยอดส่งฟรีขึ้นอยู่กับแต่ละร้าน หากไม่แน่ใจแนะนำให้ใส่ไว้ที่ 660 เยนโดยประมาณ</p>
+              <div className="mb-1 input-group">
                 <span className="input-group-text">ค่าบริการอื่น ๆ เพิ่มเติม</span>
                 <input
                   type="number"
@@ -136,16 +136,16 @@ export default function BlackCat() {
                 />
                 <span className="input-group-text">เยน</span>
               </div>
-              <div className="d-flex mb-3 align-items-center">
+              <div className="mb-3 d-flex align-items-center">
                 <input
                   type="checkbox"
                   checked={disableAdditionalPrice}
                   onChange={handleAdditionalPriceChecked}
                 />
-                <p className="text-secondary mb-0 ms-2">ไม่มีค่าบริการเพิ่มเติม</p>
+                <p className="mb-0 text-secondary ms-2">ไม่มีค่าบริการเพิ่มเติม</p>
               </div>
               <div className="d-block">
-                <p className="fs-3 mb-0">ราคาสุทธิ {result} บาท*</p>
+                <p className="mb-0 fs-3">ราคาสุทธิ {result} บาท*</p>
                 <p className="mb-0 text-secondary">
                   ∗ ราคาสุทธิดังกล่าวยังไม่รวมค่าจัดส่งจากประเทศญี่ปุ่นมายังประเทศไทย โดยขึ้นอยู่กับขนาดและน้ำหนักของสินค้า, รวมถึงวิธีการจัดส่งไปยังที่อยู่ของลูกค้า ซึ่งจะคำนวณในภายหลังอีกทีหลังจากสินค้าเดินทางถึงโกดังที่ประเทศไทยแล้ว
                 </p>
