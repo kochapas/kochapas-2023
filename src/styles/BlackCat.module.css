@@ -1,0 +1,16 @@
+.header__background {
+  width: 100%;
+  height: 48vh;
+  overflow: hidden;
+  z-index: -1;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../../public/assets/blackcat/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .header__background {
+    background-position: 25% 0%;
+    height: 30vh;
+  }
+}
