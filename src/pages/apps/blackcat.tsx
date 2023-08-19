@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import { useState, ChangeEvent } from "react";
 import styles from "@/styles/BlackCat.module.css";
 import { useWindowSize } from "@/hooks";
 import { CardContainer } from "@/components";
+import ogImage from "../../../public/assets/blackcat/banner.jpg";
 
 export default function BlackCat() {
+  const title = "แมวดำนำเข้า: โปรแกรมช่วยคำนวณค่ากดสินค้า";
+  const description = "รับกดสินค้านำเข้าจากญี่ปุ่น ได้ของครบ จบในที่เดียว เรตเริ่มต้น 0.32 ปิดรอบทุกเดือน";
+
   const [result, setResult] = useState("-");
   const [productPrice, setProductPrice] = useState("");
   const [shippingPrice, setShippingPrice] = useState("0");
@@ -80,6 +85,18 @@ export default function BlackCat() {
 
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Facebook Open Graph data */}
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://www.kochapas.dev/apps/blackcat`} />
+        <meta property="og:image" content={`https://www.kochapas.dev/${ogImage.src}`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content={title} />
+      </Head>
       <div
         className={`${styles.header__background} mb-2`}
       />
